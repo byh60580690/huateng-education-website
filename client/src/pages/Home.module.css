@@ -1,0 +1,455 @@
+/* ============================================
+   华腾集团 - 首页样式
+   ============================================ */
+
+/* ---- Animations ---- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ---- Banner Section ---- */
+.banner {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, var(--color-primary-light) 100%);
+  overflow: hidden;
+  padding: 0 var(--container-padding);
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(42, 90, 140, 0.15) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to top, var(--color-bg-primary), transparent);
+  pointer-events: none;
+}
+
+.bannerContent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.bannerTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--color-text-light);
+  margin-bottom: 24px;
+  letter-spacing: 4px;
+  line-height: var(--leading-tight);
+}
+
+.bannerSubtitle {
+  font-size: var(--text-xl);
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 48px;
+  line-height: var(--leading-relaxed);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bannerCta {
+  display: inline-block;
+  padding: 16px 48px;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  background: linear-gradient(135deg, var(--color-accent-light), var(--color-accent));
+  border-radius: var(--radius-full);
+  letter-spacing: 1px;
+  transition: all var(--transition-normal);
+  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.3);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bannerCta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(201, 168, 76, 0.45);
+  color: var(--color-primary-dark);
+}
+
+/* ---- Section Common ---- */
+.section {
+  padding: var(--section-padding) 0;
+}
+
+.sectionDark {
+  background-color: var(--color-bg-secondary);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionTitle {
+  font-size: var(--text-3xl);
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
+.sectionSubtitle {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  margin-top: 12px;
+}
+
+/* ---- Intro Section ---- */
+.introDescription {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.serviceCard {
+  text-align: center;
+  padding: 40px 24px;
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-border-light);
+}
+
+.serviceCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
+}
+
+.serviceIcon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: var(--radius-lg);
+  color: var(--color-text-light);
+  font-size: 28px;
+}
+
+.serviceTitle {
+  font-size: var(--text-xl);
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.serviceDescription {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+/* ---- History Timeline Section ---- */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-accent-light), var(--color-accent), var(--color-accent-light));
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 48px;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.timelineItem:nth-child(1) { animation-delay: 0.1s; }
+.timelineItem:nth-child(2) { animation-delay: 0.2s; }
+.timelineItem:nth-child(3) { animation-delay: 0.3s; }
+.timelineItem:nth-child(4) { animation-delay: 0.4s; }
+.timelineItem:nth-child(5) { animation-delay: 0.5s; }
+.timelineItem:nth-child(6) { animation-delay: 0.6s; }
+
+.timelineItem:last-child {
+  margin-bottom: 0;
+}
+
+.timelineItem:nth-child(odd) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.timelineItem:nth-child(even) {
+  text-align: left;
+}
+
+.timelineDot {
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  background: var(--color-accent);
+  border: 3px solid var(--color-bg-primary);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  box-shadow: 0 0 0 4px rgba(201, 168, 76, 0.2);
+}
+
+.timelineContent {
+  width: calc(50% - 40px);
+  padding: 24px;
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-border-light);
+}
+
+.timelineContent:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-accent);
+}
+
+.timelineYear {
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-accent-dark);
+  background: rgba(201, 168, 76, 0.1);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: 8px;
+}
+
+.timelineTitle {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.timelineDescription {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+/* ---- News Section ---- */
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.newsCard {
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-border-light);
+  cursor: pointer;
+}
+
+.newsCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.newsCardImage {
+  height: 200px;
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary-light));
+  position: relative;
+  overflow: hidden;
+}
+
+.newsCardImage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 70%, rgba(201, 168, 76, 0.15), transparent 60%);
+}
+
+.newsCardBody {
+  padding: 28px;
+}
+
+.newsDate {
+  font-size: var(--text-sm);
+  color: var(--color-accent-dark);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.newsTitle {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+  line-height: var(--leading-tight);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.newsSummary {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .newsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    min-height: 70vh;
+  }
+
+  .bannerTitle {
+    font-size: var(--text-3xl);
+    letter-spacing: 2px;
+  }
+
+  .bannerSubtitle {
+    font-size: var(--text-base);
+    margin-bottom: 36px;
+  }
+
+  .bannerCta {
+    padding: 14px 36px;
+    font-size: var(--text-base);
+  }
+
+  .sectionTitle {
+    font-size: var(--text-2xl);
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .serviceCard {
+    padding: 28px 20px;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timelineDot {
+    left: 20px;
+  }
+
+  .timelineItem,
+  .timelineItem:nth-child(odd) {
+    flex-direction: row;
+    text-align: left;
+    padding-left: 52px;
+  }
+
+  .timelineContent {
+    width: 100%;
+  }
+
+  .newsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 40px;
+  }
+}

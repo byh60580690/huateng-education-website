@@ -1,0 +1,468 @@
+/* ============================================
+   华腾集团 - 集团业务页面样式
+   ============================================ */
+
+/* ---- Animations ---- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- Hero Banner ---- */
+.heroBanner {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, var(--color-primary-light) 100%);
+  overflow: hidden;
+  padding: 80px var(--container-padding);
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(42, 90, 140, 0.15) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-text-light);
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.heroSubtitle {
+  font-size: var(--text-xl);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: var(--leading-relaxed);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ---- Section Common ---- */
+.section {
+  padding: var(--section-padding) 0;
+}
+
+.sectionAlt {
+  background-color: var(--color-bg-secondary);
+}
+
+.sectionDark {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  color: var(--color-text-light);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionTitle {
+  font-size: var(--text-3xl);
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
+.sectionTitleLight {
+  color: var(--color-text-light);
+}
+
+.sectionSubtitle {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  margin-top: 12px;
+}
+
+.sectionSubtitleLight {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---- Service Mode Tabs ---- */
+.modeTabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.modeTab {
+  padding: 14px 40px;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-border);
+  background: var(--color-bg-primary);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  letter-spacing: 1px;
+}
+
+.modeTab:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.modeTabActive {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: var(--color-text-light);
+  border-color: var(--color-primary);
+}
+
+.modeTabActive:hover {
+  color: var(--color-text-light);
+}
+
+/* ---- Service Content Area ---- */
+.serviceContent {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.serviceIntro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 48px;
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+/* ---- Process Steps ---- */
+.processTitle {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.processSteps {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.processStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 140px;
+}
+
+.stepNumber {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-lg);
+  font-weight: 700;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(26, 58, 92, 0.2);
+}
+
+.stepLabel {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.processArrow {
+  font-size: var(--text-xl);
+  color: var(--color-accent);
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+/* ---- Service Cards Grid ---- */
+.cardsTitle {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.serviceCard {
+  text-align: center;
+  padding: 32px 20px;
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-border-light);
+}
+
+.serviceCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
+}
+
+.cardIcon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: var(--radius-lg);
+  font-size: 24px;
+}
+
+.cardTitle {
+  font-size: var(--text-base);
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.cardDesc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+/* ---- Advantages ---- */
+.advantagesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.advantageItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all var(--transition-normal);
+}
+
+.advantageItem:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-3px);
+}
+
+.advantageIcon {
+  font-size: 28px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.advantageTitle {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin-bottom: 6px;
+}
+
+.advantageDesc {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.7);
+  line-height: var(--leading-relaxed);
+}
+
+/* ---- Study Directions Section ---- */
+.directionsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.directionCard {
+  position: relative;
+  padding: 40px 28px;
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border-light);
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.directionCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+}
+
+.directionCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
+}
+
+.directionIcon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: var(--radius-lg);
+  font-size: 28px;
+}
+
+.directionTitle {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.directionTarget {
+  font-size: var(--text-sm);
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.directionDesc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advantagesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .directionsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroBanner {
+    min-height: 40vh;
+    padding: 60px var(--container-padding);
+  }
+
+  .heroTitle {
+    font-size: var(--text-2xl);
+    letter-spacing: 2px;
+  }
+
+  .heroSubtitle {
+    font-size: var(--text-base);
+  }
+
+  .sectionTitle {
+    font-size: var(--text-2xl);
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 40px;
+  }
+
+  .modeTabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modeTab {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .processSteps {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .processStep {
+    width: auto;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .stepNumber {
+    margin-bottom: 0;
+  }
+
+  .processArrow {
+    transform: rotate(90deg);
+    margin-top: 0;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .advantagesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .directionsGrid {
+    grid-template-columns: 1fr;
+  }
+}

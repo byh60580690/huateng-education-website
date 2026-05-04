@@ -1,0 +1,366 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "business": "Our Business",
+    "culture": "Culture",
+    "cooperation": "Cooperation"
+  },
+  "language": {
+    "label": "Language",
+    "zhCN": "中文简体",
+    "zhTW": "中文繁體",
+    "en": "English"
+  },
+  "home": {
+    "banner": {
+      "title": "Dream Big, Reach Higher",
+      "subtitle": "Huateng Group — Dedicated to undergraduate and postgraduate study abroad applications, empowering every student to enter the world's top universities",
+      "cta": "Learn More"
+    },
+    "intro": {
+      "title": "About Huateng Group",
+      "description": "Huateng Group is a premium and professional study abroad education group, specializing in undergraduate and postgraduate applications, with deep expertise in Hong Kong bachelor's degree admissions. We are committed to providing personalized, comprehensive academic planning and application services to help every student achieve their goal of entering top universities.",
+      "services": {
+        "team": {
+          "title": "Expert Team",
+          "description": "Senior study abroad consultants with over 10 years of average industry experience"
+        },
+        "resources": {
+          "title": "Elite University Network",
+          "description": "Deep partnerships established with over 100 top universities worldwide"
+        },
+        "plan": {
+          "title": "Personalized Plans",
+          "description": "Tailored academic planning with precise university and program matching"
+        },
+        "rate": {
+          "title": "High Acceptance Rate",
+          "description": "Over 95% acceptance rate at prestigious universities with success stories worldwide"
+        }
+      }
+    },
+    "history": {
+      "title": "Our Journey",
+      "subtitle": "Over a decade of dedication to study abroad education, witnessing countless students achieve their dreams",
+      "items": [
+        {
+          "year": "2010",
+          "title": "Foundation",
+          "description": "Huateng Group was officially established in Shenzhen, opening a new chapter in study abroad education services"
+        },
+        {
+          "year": "2013",
+          "title": "Hong Kong Expansion",
+          "description": "Successfully expanded into Hong Kong bachelor's degree admissions, becoming an industry pioneer"
+        },
+        {
+          "year": "2016",
+          "title": "Nationwide Presence",
+          "description": "Established branches in Beijing, Shanghai, and Guangzhou, with service network covering the entire nation"
+        },
+        {
+          "year": "2019",
+          "title": "Online Platform Launch",
+          "description": "Launched online study abroad application platform, achieving online-offline integrated development"
+        },
+        {
+          "year": "2022",
+          "title": "Industry Benchmark",
+          "description": "Served over 10,000 students cumulatively, with acceptance rates consistently leading the industry"
+        },
+        {
+          "year": "2024",
+          "title": "Intelligent Upgrade",
+          "description": "Introduced AI-powered academic planning system, ushering in a new era of intelligent study abroad services"
+        }
+      ]
+    },
+    "news": {
+      "title": "Latest News",
+      "subtitle": "Stay updated with Huateng Group's latest news and events",
+      "items": [
+        {
+          "date": "2024-12-15",
+          "title": "Huateng Group's 2025 Hong Kong Elite University Admission Seminar Successfully Held",
+          "summary": "The seminar invited admissions officers from several prestigious Hong Kong universities to provide detailed insights on the latest admission policies and application strategies for over 100 students and parents."
+        },
+        {
+          "date": "2024-11-28",
+          "title": "Great News: 2024 Fall Admission Season Achieves Outstanding Results",
+          "summary": "Huateng students secured multiple offers from world Top 50 universities in the 2024 fall application cycle, with an overall acceptance rate of 97%."
+        },
+        {
+          "date": "2024-11-10",
+          "title": "Huateng Group Signs Strategic Partnership with UK Russell Group Universities",
+          "summary": "This partnership will provide Huateng students with more premium UK university application channels and exclusive scholarship opportunities."
+        }
+      ]
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Huateng Group",
+      "subtitle": "Over a decade of dedication to study abroad education, trusted by thousands of students for our expertise and integrity"
+    },
+    "background": {
+      "title": "Our Background",
+      "description": "Founded in 2010, Huateng Group is a premium and professional study abroad education group headquartered in Shenzhen, with branches in Beijing, Shanghai, Guangzhou and other major cities. The group specializes in undergraduate and postgraduate study abroad applications, with particularly deep expertise and an outstanding reputation in Hong Kong bachelor's degree admissions. Over the past decade, Huateng Group has consistently upheld a student-centered service philosophy, helping over 10,000 students successfully enter the world's top universities, with acceptance rates consistently leading the industry."
+    },
+    "visionMission": {
+      "title": "Vision & Mission",
+      "vision": {
+        "title": "Our Vision",
+        "description": "To become the world's leading study abroad education service group, building bridges to prestigious universities for students around the globe."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "description": "To help every student achieve their dream of attending a prestigious university, providing the most professional and caring academic planning and application services."
+      }
+    },
+    "values": {
+      "title": "Core Values",
+      "subtitle": "Four core values guiding Huateng Group forward",
+      "items": {
+        "professional": {
+          "title": "Professionalism",
+          "description": "Senior consultant team with deep industry expertise, safeguarding every student's academic journey"
+        },
+        "integrity": {
+          "title": "Integrity",
+          "description": "Upholding the highest standards of honesty with transparent service processes, earning long-term trust"
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Embracing technological change, integrating AI-powered systems to continuously enhance the service experience"
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "Pursuing the highest quality standards, striving for the best possible outcome in every application"
+        }
+      }
+    },
+    "philosophy": {
+      "title": "Our Philosophy",
+      "subtitle": "Three guiding principles driving high-quality growth",
+      "items": {
+        "education": {
+          "title": "Education Philosophy",
+          "description": "Student-centered, personalized approach — crafting tailored academic plans based on each student's unique strengths and goals, unlocking potential and shaping futures."
+        },
+        "strategy": {
+          "title": "Development Strategy",
+          "description": "Deepening Hong Kong admissions expertise while expanding globally. Rooted in the Greater Bay Area, reaching across China and the world to build an international study abroad service brand."
+        },
+        "management": {
+          "title": "Management Philosophy",
+          "description": "Talent-first, pursuing excellence. Bringing together industry elites, building a learning organization, and driving sustainable growth through efficient management and teamwork."
+        }
+      }
+    },
+    "team": {
+      "title": "Leadership Team",
+      "subtitle": "An experienced leadership team guiding the group's development",
+      "members": [
+        {
+          "name": "Chen Zhiyuan",
+          "initial": "C",
+          "role": "Founder & CEO",
+          "bio": "MBA graduate from the University of Hong Kong with over 20 years of education industry management experience. Previously held senior executive positions at several renowned education institutions before founding Huateng Group in 2010, leading the team from inception to become an industry-leading study abroad education group."
+        },
+        {
+          "name": "Lin Yaqi",
+          "initial": "L",
+          "role": "Chief Operating Officer",
+          "bio": "Graduate of the London School of Economics with 15 years of study abroad consulting and operations management experience. Led the establishment of Huateng Group's standardized service system and nationwide branch operations management framework, driving continuous improvement in service quality."
+        },
+        {
+          "name": "Wang Haoran",
+          "initial": "W",
+          "role": "Chief Technology Officer",
+          "bio": "Computer Science graduate from Tsinghua University, previously served as technology lead at multiple tech companies. After joining Huateng Group, led the development of the online study abroad application platform and AI-powered academic planning system, driving the group's digital transformation."
+        }
+      ]
+    },
+    "partners": {
+      "title": "Our Partners",
+      "subtitle": "Deep partnerships with world-class universities and institutions",
+      "list": [
+        { "name": "The University of Hong Kong" },
+        { "name": "The Chinese University of Hong Kong" },
+        { "name": "Hong Kong University of Science and Technology" },
+        { "name": "University College London" },
+        { "name": "National University of Singapore" },
+        { "name": "The University of Melbourne" },
+        { "name": "University of Toronto" },
+        { "name": "The University of Tokyo" },
+        { "name": "Seoul National University" }
+      ]
+    }
+  },
+  "business": {
+    "hero": {
+      "title": "Our Business",
+      "subtitle": "Integrated online and offline services to help every student achieve their dream of attending a prestigious university"
+    },
+    "serviceMode": {
+      "title": "Service Models",
+      "subtitle": "Dual-track online and offline services for comprehensive study abroad application support",
+      "online": "Online Services",
+      "offline": "Offline Services"
+    },
+    "online": {
+      "intro": "Huateng Group's online service platform breaks geographical barriers, allowing you to access professional study abroad guidance anytime, anywhere. Our advanced online system delivers efficient and convenient full-process services.",
+      "process": {
+        "title": "Service Process",
+        "steps": [
+          { "label": "Online Consultation" },
+          { "label": "Remote Assessment" },
+          { "label": "Plan Development" },
+          { "label": "Application Guidance" },
+          { "label": "Progress Tracking" }
+        ]
+      },
+      "servicesTitle": "Service Details",
+      "services": [
+        { "title": "Online Consultation", "desc": "One-on-one online communication with senior consultants to answer all your questions" },
+        { "title": "Remote Assessment", "desc": "Comprehensive academic background evaluation for precise university targeting" },
+        { "title": "Online Application Guidance", "desc": "Full online guidance for essay editing and document preparation" },
+        { "title": "Progress Tracking", "desc": "Real-time application progress monitoring at every step" }
+      ],
+      "advantagesTitle": "Online Service Advantages",
+      "advantagesSubtitle": "Technology-empowered for more efficient applications",
+      "advantages": [
+        { "title": "Anytime, Anywhere", "desc": "Access professional services without geographical or time constraints" },
+        { "title": "Efficient & Convenient", "desc": "Automated online processes significantly improve application efficiency" },
+        { "title": "Data Security", "desc": "Strict data encryption and privacy protection to ensure information security" }
+      ]
+    },
+    "offline": {
+      "intro": "Huateng Group's offline service centers are located in major cities nationwide, providing in-depth face-to-face consultations and full-journey accompaniment for the most personalized study abroad experience.",
+      "process": {
+        "title": "Service Process",
+        "steps": [
+          { "label": "Schedule Meeting" },
+          { "label": "In-depth Assessment" },
+          { "label": "Essay Coaching" },
+          { "label": "Interview Training" },
+          { "label": "Admission Follow-up" }
+        ]
+      },
+      "servicesTitle": "Service Details",
+      "services": [
+        { "title": "One-on-One Meeting", "desc": "In-depth face-to-face consultation with senior advisors for tailored plans" },
+        { "title": "Essay Coaching", "desc": "Professional writing team provides on-site guidance for outstanding application materials" },
+        { "title": "Interview Training", "desc": "Mock interview practice sessions to enhance interview performance" },
+        { "title": "Campus Visit Arrangement", "desc": "Assistance in arranging campus visits to experience the university atmosphere firsthand" }
+      ],
+      "advantagesTitle": "Offline Service Advantages",
+      "advantagesSubtitle": "Face-to-face communication for a warmer service experience",
+      "advantages": [
+        { "title": "Deep Communication", "desc": "Face-to-face interaction for deeper understanding of student needs and characteristics" },
+        { "title": "Full Accompaniment", "desc": "Complete support from planning to admission, providing the most caring assistance" },
+        { "title": "Resource Connection", "desc": "Direct access to exclusive resources including offline events and university admission fairs" }
+      ]
+    },
+    "directions": {
+      "title": "Study Directions",
+      "subtitle": "Three core directions covering different stages of academic advancement",
+      "items": [
+        {
+          "title": "Undergraduate Application",
+          "target": "For: High School Students",
+          "desc": "Comprehensive application planning and guidance for top global undergraduate programs, covering school selection strategy, essay writing, standardized test planning, and full-process services to help students enter their ideal universities."
+        },
+        {
+          "title": "Graduate Application",
+          "target": "For: Undergraduate Students",
+          "desc": "Application services for master's and doctoral programs, including academic profile enhancement, research proposal writing, supervisor matching, and professional guidance for academic advancement."
+        },
+        {
+          "title": "Hong Kong Bachelor's Admission",
+          "target": "For: Mainland High School Students",
+          "desc": "Huateng Group's core expertise area, focusing on undergraduate applications to Hong Kong's top eight universities, providing the latest admission policy insights, interview coaching, and exclusive application channels with industry-leading acceptance rates."
+        }
+      ]
+    }
+  },
+  "cooperation": {
+    "hero": {
+      "title": "Cooperation & Partnership",
+      "subtitle": "Join hands with Huateng to shape the future of study abroad education"
+    },
+    "intro": {
+      "title": "Win-Win Cooperation",
+      "description": "Huateng Group sincerely invites universities, educational institutions, and corporate partners to join our cooperation network. Whether you are looking to expand study abroad service channels or seeking quality educational resource connections, we look forward to working together to build bridges to prestigious universities for students."
+    },
+    "form": {
+      "title": "Submit Partnership Inquiry",
+      "subtitle": "Please fill in the following information and we will contact you shortly",
+      "name": "Contact Name",
+      "namePlaceholder": "Please enter your name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Please enter your 11-digit phone number",
+      "organization": "Institution or Company Name",
+      "organizationPlaceholder": "Please enter your institution or company name",
+      "intention": "Partnership Intention or Requirements",
+      "intentionPlaceholder": "Please briefly describe your partnership intention or specific requirements",
+      "submit": "Submit Inquiry",
+      "submitting": "Submitting..."
+    },
+    "validation": {
+      "required": "This field is required",
+      "phoneFormat": "Please enter a valid phone number (11 digits, starting with 1)"
+    },
+    "message": {
+      "success": "Submitted successfully! We will contact you shortly.",
+      "error": "Submission failed. Please try again later."
+    }
+  },
+  "culture": {
+    "hero": {
+      "title": "Our Culture",
+      "subtitle": "United by culture, achieving dreams through teamwork"
+    },
+    "video": {
+      "title": "Culture Video",
+      "subtitle": "Step into Huateng and experience our culture and vitality",
+      "playLabel": "Click to play video",
+      "description": "Huateng Group corporate culture video — documenting our growth stories, team spirit, and service philosophy, showcasing the professionalism and humanistic care of the Huateng team.",
+      "unsupported": "Your browser does not support video playback"
+    },
+    "gallery": {
+      "title": "Culture Gallery",
+      "subtitle": "Capturing every highlight moment of the Huateng team",
+      "items": [
+        { "caption": "2024 Annual Team Building Event" },
+        { "caption": "Hong Kong Elite University Admission Seminar" },
+        { "caption": "Partnership Signing Ceremony" },
+        { "caption": "Annual Outstanding Employee Awards" },
+        { "caption": "Study Abroad Experience Sharing Salon" },
+        { "caption": "International Education Exhibition" },
+        { "caption": "New Employee Orientation Training" },
+        { "caption": "Student Admission Celebration" }
+      ]
+    }
+  },
+  "ai": {
+    "title": "AI Assistant",
+    "placeholder": "Type your question...",
+    "send": "Send",
+    "loading": "Generating reply...",
+    "error": "Failed to generate reply. Please try again.",
+    "retry": "Retry",
+    "welcome": "Hello! I'm Huateng Group's AI assistant. Feel free to ask me about study abroad programs and university admissions."
+  },
+  "footer": {
+    "name": "Huateng Group",
+    "description": "A premium and professional study abroad education group, specializing in undergraduate and postgraduate applications, with deep expertise in Hong Kong bachelor's degree admissions.",
+    "contact": "Contact Us",
+    "address": "Nanshan District, Shenzhen",
+    "phone": "400-888-8888",
+    "email": "info@huateng.edu",
+    "links": "Quick Links",
+    "copyright": "© 2024 Huateng Group. All rights reserved."
+  }
+}

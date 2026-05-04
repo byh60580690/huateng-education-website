@@ -1,0 +1,292 @@
+/* ============================================
+   华腾集团 - 企业文化页面样式
+   ============================================ */
+
+/* ---- Animations ---- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- Hero Banner ---- */
+.heroBanner {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, var(--color-primary-light) 100%);
+  overflow: hidden;
+  padding: 80px var(--container-padding);
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(42, 90, 140, 0.15) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-text-light);
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.heroSubtitle {
+  font-size: var(--text-xl);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: var(--leading-relaxed);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ---- Section Common ---- */
+.section {
+  padding: var(--section-padding) 0;
+}
+
+.sectionAlt {
+  background-color: var(--color-bg-secondary);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionTitle {
+  font-size: var(--text-3xl);
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
+.sectionSubtitle {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  margin-top: 12px;
+}
+
+/* ---- Video Section ---- */
+.videoWrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 40%, var(--color-primary-light) 100%);
+}
+
+.videoPlaceholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.videoPlaceholder:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.videoPlaceholder:hover .playButton {
+  transform: scale(1.1);
+  box-shadow: 0 8px 32px rgba(201, 168, 76, 0.5);
+}
+
+.playButton {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.3);
+  transition: all var(--transition-normal);
+  margin-bottom: 16px;
+}
+
+.playIcon {
+  font-size: 32px;
+  color: var(--color-primary-dark);
+  margin-left: 4px;
+}
+
+.videoLabel {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--text-base);
+  font-weight: 500;
+}
+
+.videoPlayer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.videoDesc {
+  text-align: center;
+  margin-top: 24px;
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+/* ---- Gallery Section ---- */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.galleryItem {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-border-light);
+}
+
+.galleryItem:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.galleryItem:hover .galleryOverlay {
+  opacity: 1;
+}
+
+.galleryPlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.galleryOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 58, 92, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.galleryZoomIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.galleryCaption {
+  text-align: center;
+  margin-top: 12px;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroBanner {
+    min-height: 40vh;
+    padding: 60px var(--container-padding);
+  }
+
+  .heroTitle {
+    font-size: var(--text-2xl);
+    letter-spacing: 2px;
+  }
+
+  .heroSubtitle {
+    font-size: var(--text-base);
+  }
+
+  .sectionTitle {
+    font-size: var(--text-2xl);
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 40px;
+  }
+
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .playButton {
+    width: 60px;
+    height: 60px;
+  }
+
+  .playIcon {
+    font-size: 24px;
+  }
+}

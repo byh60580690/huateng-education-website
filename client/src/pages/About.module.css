@@ -1,0 +1,402 @@
+/* ============================================
+   华腾集团 - 关于我们页面样式
+   ============================================ */
+
+/* ---- Animations ---- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- Hero Banner ---- */
+.heroBanner {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, var(--color-primary-light) 100%);
+  overflow: hidden;
+  padding: 80px var(--container-padding);
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(42, 90, 140, 0.15) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-text-light);
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.heroSubtitle {
+  font-size: var(--text-xl);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: var(--leading-relaxed);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ---- Section Common ---- */
+.section {
+  padding: var(--section-padding) 0;
+}
+
+.sectionAlt {
+  background-color: var(--color-bg-secondary);
+}
+
+.sectionDark {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  color: var(--color-text-light);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionTitle {
+  font-size: var(--text-3xl);
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
+.sectionTitleLight {
+  color: var(--color-text-light);
+}
+
+.sectionSubtitle {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  margin-top: 12px;
+}
+
+.sectionSubtitleLight {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---- Background Intro ---- */
+.introText {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+/* ---- Philosophy Cards Grid ---- */
+.philosophyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.philosophyCard {
+  text-align: center;
+  padding: 40px 28px;
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-border-light);
+}
+
+.philosophyCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
+}
+
+.philosophyIcon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: var(--radius-lg);
+  font-size: 28px;
+}
+
+.philosophyCardTitle {
+  font-size: var(--text-xl);
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.philosophyCardDesc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+/* ---- Values Section (Dark) ---- */
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.valueItem {
+  text-align: center;
+  padding: 36px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all var(--transition-normal);
+}
+
+.valueItem:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-4px);
+}
+
+.valueIcon {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.valueTitle {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin-bottom: 8px;
+}
+
+.valueDesc {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.7);
+  line-height: var(--leading-relaxed);
+}
+
+/* ---- Team Section ---- */
+.teamList {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.teamMember {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 32px;
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border-light);
+  transition: all var(--transition-normal);
+}
+
+.teamMember:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-accent);
+}
+
+.teamMember:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.teamAvatar {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--color-text-light);
+  box-shadow: var(--shadow-md);
+}
+
+.teamAvatar:nth-of-type(1) {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+}
+
+.avatarBg1 {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+}
+
+.avatarBg2 {
+  background: linear-gradient(135deg, var(--color-accent-dark), var(--color-accent));
+}
+
+.avatarBg3 {
+  background: linear-gradient(135deg, #2a7a5a, #3aaa7a);
+}
+
+.teamInfo {
+  flex: 1;
+}
+
+.teamName {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 6px;
+}
+
+.teamRole {
+  font-size: var(--text-base);
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.teamBio {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+/* ---- Partners Section ---- */
+.partnersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.partnerCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border-light);
+  transition: all var(--transition-normal);
+  min-height: 100px;
+}
+
+.partnerCard:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-accent);
+  transform: translateY(-3px);
+}
+
+.partnerName {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .philosophyGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partnersGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroBanner {
+    min-height: 40vh;
+    padding: 60px var(--container-padding);
+  }
+
+  .heroTitle {
+    font-size: var(--text-2xl);
+    letter-spacing: 2px;
+  }
+
+  .heroSubtitle {
+    font-size: var(--text-base);
+  }
+
+  .sectionTitle {
+    font-size: var(--text-2xl);
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 40px;
+  }
+
+  .philosophyGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .philosophyCard {
+    padding: 28px 20px;
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .teamMember,
+  .teamMember:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .teamAvatar {
+    width: 120px;
+    height: 120px;
+    font-size: 40px;
+  }
+
+  .partnersGrid {
+    grid-template-columns: 1fr;
+  }
+}

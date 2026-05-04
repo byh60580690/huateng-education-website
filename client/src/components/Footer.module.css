@@ -1,0 +1,109 @@
+/* ============================================
+   华腾集团 - Footer 样式
+   ============================================ */
+
+.footer {
+  background-color: var(--color-primary-dark);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 48px 0 0;
+}
+
+.footerInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footerSection h3 {
+  color: var(--color-text-light);
+  font-size: var(--text-base);
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.brandName {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin-bottom: 12px;
+}
+
+.brandDescription {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contactIcon {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footerLink {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.7);
+  transition: color var(--transition-fast);
+}
+
+.footerLink:hover {
+  color: var(--color-accent-light);
+}
+
+/* 版权栏 */
+.copyright {
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* 平板端 */
+@media (max-width: 1024px) {
+  .footerInner {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+/* 移动端 */
+@media (max-width: 768px) {
+  .footer {
+    padding: 36px 0 0;
+  }
+
+  .footerInner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .copyright {
+    margin-top: 28px;
+    padding: 16px 0;
+  }
+}
