@@ -69,7 +69,7 @@
   --leading-relaxed: 1.8;
 
   /* 布局 */
-  --max-width: 1200px;
+  --max-width: min(90vw, 1600px);
   --nav-height: 72px;
   --section-padding: 80px;
   --container-padding: 24px;

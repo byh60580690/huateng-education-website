@@ -358,7 +358,8 @@
     "description": "A premium and professional study abroad education group, specializing in undergraduate and postgraduate applications, with deep expertise in Hong Kong bachelor's degree admissions.",
     "contact": "Contact Us",
     "address": "Nanshan District, Shenzhen",
-    "phone": "400-888-8888",
+    "phoneMainland": "Mainland: 400-888-8888",
+    "phoneHongKong": "Hong Kong: +852 1234-5678",
     "email": "info@huateng.edu",
     "links": "Quick Links",
     "copyright": "© 2024 Huateng Group. All rights reserved."

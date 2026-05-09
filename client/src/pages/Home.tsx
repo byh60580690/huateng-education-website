@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import styles from './Home.module.css';
 
-const serviceIcons = ['👨‍🏫', '🏛️', '📋', '🏆'];
+const serviceIcons = ['🌟', '🏛️', '📋', '🏆'];
 const serviceKeys = ['team', 'resources', 'plan', 'rate'] as const;
 
 export default function Home() {

@@ -27,12 +27,12 @@ export default function Footer() {
           <h3>{t('footer.contact')}</h3>
           <div className={styles.contactList}>
             <div className={styles.contactItem}>
-              <span className={styles.contactIcon}>📍</span>
-              <span>{t('footer.address')}</span>
+              <span className={styles.contactIcon}>📞</span>
+              <span>{t('footer.phoneMainland')}</span>
             </div>
             <div className={styles.contactItem}>
-              <span className={styles.contactIcon}>📞</span>
-              <span>{t('footer.phone')}</span>
+              <span className={styles.contactIcon}>📱</span>
+              <span>{t('footer.phoneHongKong')}</span>
             </div>
             <div className={styles.contactItem}>
               <span className={styles.contactIcon}>✉️</span>

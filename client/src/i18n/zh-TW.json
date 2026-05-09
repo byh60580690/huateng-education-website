@@ -358,7 +358,8 @@
     "description": "高端且專業的留學教育集團，專注本科及研究生留學申請，尤其在香港學士升學領域擁有深厚積累。",
     "contact": "聯繫我們",
     "address": "深圳市南山區科技園",
-    "phone": "400-888-8888",
+    "phoneMainland": "內地電話：400-888-8888",
+    "phoneHongKong": "香港電話：+852 1234-5678",
     "email": "info@huateng.edu",
     "links": "快速連結",
     "copyright": "© 2024 華騰集團 版權所有"
