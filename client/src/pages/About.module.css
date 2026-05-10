@@ -97,6 +97,16 @@
   border-radius: 2px;
 }
 
+/* ---- Vision Intro ---- */
+.visionIntro {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
 .sectionTitleLight {
   color: var(--color-text-light);
 }

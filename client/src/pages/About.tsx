@@ -54,6 +54,7 @@ export default function About() {
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>{t('about.visionMission.title')}</h2>
           </div>
+          <p className={styles.visionIntro}>{t('about.visionMission.intro')}</p>
           <div className={styles.philosophyGrid}>
             <div className={styles.philosophyCard}>
               <div className={styles.philosophyIcon}>🔭</div>
