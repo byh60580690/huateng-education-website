@@ -4,6 +4,13 @@ import styles from './Home.module.css';
 const serviceIcons = ['🌟', '🏛️', '📋', '🏆'];
 const serviceKeys = ['team', 'resources', 'plan', 'rate'] as const;
 
+// 新闻图片配置 - 图片放在 public/images/news/ 目录下
+const newsImages = [
+  '/images/news/集团动态1.png',
+  '/images/news/集团动态2.png',
+  '/images/news/集团动态3.png',
+];
+
 export default function Home() {
   const { t } = useTranslation();
 
@@ -82,9 +89,15 @@ export default function Home() {
           <p className={styles.sectionSubtitle}>{t('home.news.subtitle')}</p>
         </div>
         <div className={styles.newsGrid}>
-          {newsItems.map((item) => (
+          {newsItems.map((item, idx) => (
             <article key={item.date} className={styles.newsCard}>
-              <div className={styles.newsCardImage} />
+              <div className={styles.newsCardImage}>
+                <img 
+                  src={newsImages[idx]} 
+                  alt={item.title}
+                  className={styles.newsImg}
+                />
+              </div>
               <div className={styles.newsCardBody}>
                 <span className={styles.newsDate}>{item.date}</span>
                 <h3 className={styles.newsTitle}>{item.title}</h3>
