@@ -4,14 +4,14 @@ import styles from './About.module.css';
 const philosophyItems = [
   { icon: '🎯', key: 'education' },
   { icon: '🚀', key: 'strategy' },
-  { icon: '👥', key: 'management' },
+  { icon: '📈', key: 'management' },
 ] as const;
 
 const valueItems = [
   { icon: '🏅', key: 'professional' },
-  { icon: '🤝', key: 'integrity' },
+  { icon: '🔐', key: 'integrity' },
   { icon: '💡', key: 'innovation' },
-  { icon: '⭐', key: 'excellence' },
+  { icon: '✨', key: 'excellence' },
 ] as const;
 
 const teamAvatarStyles = [styles.avatarBg1, styles.avatarBg2, styles.avatarBg3] as const;
@@ -56,15 +56,25 @@ export default function About() {
           </div>
           <p className={styles.visionIntro}>{t('about.visionMission.intro')}</p>
           <div className={styles.philosophyGrid}>
-            <div className={styles.philosophyCard}>
-              <div className={styles.philosophyIcon}>🔭</div>
-              <h3 className={styles.philosophyCardTitle}>{t('about.visionMission.vision.title')}</h3>
-              <p className={styles.philosophyCardDesc}>{t('about.visionMission.vision.description')}</p>
+            <div 
+              className={`${styles.philosophyCard} ${styles.visionCard}`}
+              style={{ backgroundImage: "url('/images/about/集团愿景.png')" }}
+            >
+              <div className={styles.cardOverlay} />
+              <div className={styles.cardContent}>
+                <h3 className={styles.philosophyCardTitle}>{t('about.visionMission.vision.title')}</h3>
+                <p className={styles.philosophyCardDesc}>{t('about.visionMission.vision.description')}</p>
+              </div>
             </div>
-            <div className={styles.philosophyCard}>
-              <div className={styles.philosophyIcon}>🎯</div>
-              <h3 className={styles.philosophyCardTitle}>{t('about.visionMission.mission.title')}</h3>
-              <p className={styles.philosophyCardDesc}>{t('about.visionMission.mission.description')}</p>
+            <div 
+              className={`${styles.philosophyCard} ${styles.missionCard}`}
+              style={{ backgroundImage: "url('/images/about/集团使命.png')" }}
+            >
+              <div className={styles.cardOverlay} />
+              <div className={styles.cardContent}>
+                <h3 className={styles.philosophyCardTitle}>{t('about.visionMission.mission.title')}</h3>
+                <p className={styles.philosophyCardDesc}>{t('about.visionMission.mission.description')}</p>
+              </div>
             </div>
           </div>
         </div>

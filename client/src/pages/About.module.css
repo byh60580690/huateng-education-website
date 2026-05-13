@@ -139,6 +139,56 @@
   margin-top: 48px;
 }
 
+/* 愿景与使命部分只有2个卡片，居中显示 */
+.sectionAlt .philosophyGrid {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 愿景与使命卡片背景图片 */
+.visionCard,
+.missionCard {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--color-bg-primary);
+  position: relative;
+  min-height: 200px;
+  padding: 24px;
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 58, 92, 0.85);
+  border-radius: var(--radius-lg);
+}
+
+.cardContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+
+.visionCard .philosophyCardTitle,
+.visionCard .philosophyCardDesc,
+.missionCard .philosophyCardTitle,
+.missionCard .philosophyCardDesc {
+  color: var(--color-text-light);
+}
+
+.visionCard .philosophyCardDesc,
+.missionCard .philosophyCardDesc {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: var(--text-base);
+}
+
 .philosophyCard {
   text-align: center;
   padding: 40px 28px;
