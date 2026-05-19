@@ -42,35 +42,35 @@
     },
     "history": {
       "title": "Our Journey",
-      "subtitle": "Over a decade of dedication to study abroad education, witnessing countless students achieve their dreams",
+      "subtitle": "Years of dedication to study abroad education, witnessing countless students achieve their dreams",
       "items": [
         {
-          "year": "2010",
+          "year": "2020",
           "title": "Foundation",
           "description": "Huateng Group was officially established in Shenzhen, opening a new chapter in study abroad education services"
         },
         {
-          "year": "2013",
+          "year": "2021",
           "title": "Hong Kong Expansion",
           "description": "Successfully expanded into Hong Kong bachelor's degree admissions, becoming an industry pioneer"
         },
         {
-          "year": "2016",
-          "title": "Nationwide Presence",
-          "description": "Established branches in Beijing, Shanghai, and Guangzhou, with service network covering the entire nation"
-        },
-        {
-          "year": "2019",
-          "title": "Online Platform Launch",
-          "description": "Launched online study abroad application platform, achieving online-offline integrated development"
-        },
-        {
           "year": "2022",
-          "title": "Industry Benchmark",
-          "description": "Served over 10,000 students cumulatively, with acceptance rates consistently leading the industry"
+          "title": "Nationwide Presence",
+          "description": "Partnered with schools in Beijing, Shanghai, and Guangzhou, with service network covering the nation"
+        },
+        {
+          "year": "2023",
+          "title": "Designated Partner",
+          "description": "Became the designated partner of Hong Kong Grace Christ College of Education, THEi, and other institutions"
         },
         {
           "year": "2024",
+          "title": "Industry Benchmark",
+          "description": "Served over 100 students cumulatively, with acceptance rates consistently leading the industry"
+        },
+        {
+          "year": "2025",
           "title": "Intelligent Upgrade",
           "description": "Introduced AI-powered academic planning system, ushering in a new era of intelligent study abroad services"
         }
@@ -81,19 +81,19 @@
       "subtitle": "Stay updated with Huateng Group's latest news and events",
       "items": [
         {
-          "date": "2024-12-15",
-          "title": "Huateng Group's 2025 Hong Kong Elite University Admission Seminar Successfully Held",
-          "summary": "The seminar invited admissions officers from several prestigious Hong Kong universities to provide detailed insights on the latest admission policies and application strategies for over 100 students and parents."
+          "date": "2026-04-28",
+          "title": "Great News: Outstanding Results in 2026 Ivy League Application Season",
+          "summary": "Huateng students secured undergraduate admissions to world-class universities including Stanford, UPenn, and Columbia in the 2026 Ivy League application season"
         },
         {
-          "date": "2024-11-28",
-          "title": "Great News: 2024 Fall Admission Season Achieves Outstanding Results",
-          "summary": "Huateng students secured multiple offers from world Top 50 universities in the 2024 fall application cycle, with an overall acceptance rate of 97%."
+          "date": "2026-01-29",
+          "title": "Huateng Group Partnered with Beijing Normal University Fuqing Affiliated School for THEi Information Session",
+          "summary": "This partnership provided Huateng students with first-hand Hong Kong study abroad information and more quality application channels and scholarship opportunities."
         },
         {
-          "date": "2024-11-10",
-          "title": "Huateng Group Signs Strategic Partnership with UK Russell Group Universities",
-          "summary": "This partnership will provide Huateng students with more premium UK university application channels and exclusive scholarship opportunities."
+          "date": "2026-01-17",
+          "title": "Huateng Group Study Abroad Department Conducted THEi Project Presentation at Putian Lizhi Middle School",
+          "summary": "The presentation invited multiple Huateng study abroad mentors to explain the latest THEi admission policies and application strategies to over 100 students and parents."
         }
       ]
     }
@@ -101,11 +101,11 @@
   "about": {
     "hero": {
       "title": "About Huateng Group",
-      "subtitle": "Over a decade of dedication to study abroad education, trusted by thousands of students for our expertise and integrity"
+      "subtitle": "Years of dedication to study abroad education, trusted by students for our expertise and integrity"
     },
     "background": {
       "title": "Our Background",
-      "description": "Founded in 2010, Huateng Group is a premium and professional study abroad education group headquartered in Shenzhen, with branches in Beijing, Shanghai, Guangzhou and other major cities. The group specializes in undergraduate and postgraduate study abroad applications, with particularly deep expertise and an outstanding reputation in Hong Kong bachelor's degree admissions. Over the past decade, Huateng Group has consistently upheld a student-centered service philosophy, helping over 10,000 students successfully enter the world's top universities, with acceptance rates consistently leading the industry."
+      "description": "Founded in 2020, Huateng Group is a premium and professional study abroad education group. The group specializes in undergraduate and postgraduate study abroad applications, with particularly deep expertise and an outstanding reputation in Hong Kong bachelor's degree admissions. Over the years, Huateng Group has consistently upheld a student-centered service philosophy, helping over 100 students successfully enter the world's top universities, with acceptance rates consistently leading the industry."
     },
     "visionMission": {
       "title": "Vision & Mission",
@@ -164,38 +164,34 @@
       "subtitle": "An experienced leadership team guiding the group's development",
       "members": [
         {
-          "name": "Chen Zhiyuan",
-          "initial": "C",
+          "name": "Liu Hualun",
+          "initial": "L",
           "role": "Founder & CEO",
-          "bio": "MBA graduate from the University of Hong Kong with over 20 years of education industry management experience. Previously held senior executive positions at several renowned education institutions before founding Huateng Group in 2010, leading the team from inception to become an industry-leading study abroad education group."
+          "bio": "Has many years of experience in education industry management. Founded Huateng Group in 2020, leading the team from scratch to become an industry-leading study abroad education group."
         },
         {
-          "name": "Lin Yaqi",
+          "name": "Liu Huajing",
           "initial": "L",
           "role": "Chief Operating Officer",
-          "bio": "Graduate of the London School of Economics with 15 years of study abroad consulting and operations management experience. Led the establishment of Huateng Group's standardized service system and nationwide branch operations management framework, driving continuous improvement in service quality."
+          "bio": "Has many years of experience in study abroad consulting and operations management. Led the establishment of Huateng Group's standardized service system and institutional operations management framework, driving continuous improvement in service quality."
         },
         {
-          "name": "Wang Haoran",
-          "initial": "W",
+          "name": "Bai Yuhang",
+          "initial": "B",
           "role": "Chief Technology Officer",
-          "bio": "Computer Science graduate from Tsinghua University, previously served as technology lead at multiple tech companies. After joining Huateng Group, led the development of the online study abroad application platform and AI-powered academic planning system, driving the group's digital transformation."
+          "bio": "Previously served as technology lead at multiple tech companies. After joining Huateng Group, led the development of the online study abroad application platform and AI-powered academic planning system, driving the group's digital transformation."
         }
       ]
     },
     "partners": {
-      "title": "Our Partners",
-      "subtitle": "Deep partnerships with world-class universities and institutions",
+      "title": "Partner Schools",
+      "subtitle": "Deep partnerships with high schools to help cultivate outstanding talent",
       "list": [
-        { "name": "The University of Hong Kong" },
-        { "name": "The Chinese University of Hong Kong" },
-        { "name": "Hong Kong University of Science and Technology" },
-        { "name": "University College London" },
-        { "name": "National University of Singapore" },
-        { "name": "The University of Melbourne" },
-        { "name": "University of Toronto" },
-        { "name": "The University of Tokyo" },
-        { "name": "Seoul National University" }
+        { "name": "Beijing Normal University Fuqing Affiliated School" },
+        { "name": "Pingtan New Century School" },
+        { "name": "Putian Lizhi Middle School" },
+        { "name": "Putian No. 9 Middle School" },
+        { "name": "Putian No. 24 Middle School" }
       ]
     }
   },
@@ -334,14 +330,14 @@
       "title": "Culture Gallery",
       "subtitle": "Capturing every highlight moment of the Huateng team",
       "items": [
-        { "caption": "2024 Annual Team Building Event" },
-        { "caption": "Hong Kong Elite University Admission Seminar" },
-        { "caption": "Partnership Signing Ceremony" },
-        { "caption": "Annual Outstanding Employee Awards" },
-        { "caption": "Study Abroad Experience Sharing Salon" },
-        { "caption": "International Education Exhibition" },
-        { "caption": "New Employee Orientation Training" },
-        { "caption": "Student Admission Celebration" }
+        { "caption": "Huateng Group Officially Authorized by Hong Kong Technological and Higher Education Institute (THEi)" },
+        { "caption": "Huateng Students Secured Undergraduate Admissions to World's Top Universities" },
+        { "caption": "Huateng Offer Harvest: Full Sweep of Hong Kong Universities" },
+        { "caption": "Huateng Group Held THEi Information Session at Beijing Normal University Fuqing Affiliated School" },
+        { "caption": "Huateng Group Conducted THEi Project Presentation at Putian Lizhi Middle School" },
+        { "caption": "Huateng Group Visited Putian No. 24 Middle School for THEi Project Presentation" },
+        { "caption": "Huateng Group Visited Putian No. 9 Middle School for THEi Project Presentation" },
+        { "caption": "Huateng Group Promoted Hong Kong THEi Project at Pingtan Century School" }
       ]
     }
   },
@@ -359,10 +355,10 @@
     "description": "A premium and professional study abroad education group, specializing in undergraduate and postgraduate applications, with deep expertise in Hong Kong bachelor's degree admissions.",
     "contact": "Contact Us",
     "address": "Nanshan District, Shenzhen",
-    "phoneMainland": "Mainland: 400-888-8888",
-    "phoneHongKong": "Hong Kong: +852 1234-5678",
-    "email": "info@huateng.edu",
+    "phoneMainland": "Mainland: +86 13652327260",
+    "phoneHongKong": "Hong Kong: +852 62162030",
+    "email": "contact@huatechhk.com",
     "links": "Quick Links",
-    "copyright": "© 2024 Huateng Group. All rights reserved."
+    "copyright": "© 2026 Huateng Group. All rights reserved."
   }
 }
