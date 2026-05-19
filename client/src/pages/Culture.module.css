@@ -211,6 +211,17 @@
   color: rgba(255, 255, 255, 0.4);
 }
 
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.galleryItem:hover .galleryImage {
+  transform: scale(1.05);
+}
+
 .galleryOverlay {
   position: absolute;
   inset: 0;
