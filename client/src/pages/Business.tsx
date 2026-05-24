@@ -69,12 +69,9 @@ export default function Business() {
           <h3 className={styles.processTitle}>{t(`business.${activeMode}.process.title`)}</h3>
           <div className={styles.processSteps}>
             {steps.map((step, idx) => (
-              <div key={idx} className={styles.processStepWrapper}>
-                <div className={styles.processStep}>
-                  <div className={styles.stepNumber}>{idx + 1}</div>
-                  <span className={styles.stepLabel}>{step.label}</span>
-                </div>
-                {idx < steps.length - 1 && <span className={styles.processArrow}>→</span>}
+              <div key={idx} className={styles.processStep}>
+                <div className={styles.stepNumber}>{idx + 1}</div>
+                <span className={styles.stepLabel}>{step.label}</span>
               </div>
             ))}
           </div>

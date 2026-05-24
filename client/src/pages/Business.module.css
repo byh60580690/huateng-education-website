@@ -187,12 +187,6 @@
   width: 140px;
 }
 
-.processStepWrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-
 .stepNumber {
   width: 48px;
   height: 48px;
@@ -212,13 +206,6 @@
   font-size: var(--text-sm);
   font-weight: 600;
   color: var(--color-text-primary);
-}
-
-.processArrow {
-  font-size: var(--text-xl);
-  color: var(--color-accent);
-  margin-top: 12px;
-  font-weight: 700;
 }
 
 /* ---- Service Cards Grid ---- */
@@ -442,36 +429,18 @@
   .processSteps {
     flex-direction: column;
     align-items: center;
-    gap: 8px;
-  }
-
-  .processStepWrapper {
-    width: 100%;
-    max-width: 200px;
+    gap: 16px;
   }
 
   .processStep {
     flex-direction: row;
-    width: 100%;
+    width: auto;
     gap: 12px;
-    justify-content: center;
   }
 
   .stepNumber {
     margin-bottom: 0;
     flex-shrink: 0;
-  }
-
-  .stepLabel {
-    text-align: left;
-  }
-
-  .processArrow {
-    transform: rotate(90deg);
-    margin-top: 0;
-    display: block;
-    text-align: center;
-    width: 100%;
   }
 
   .cardsGrid {
