@@ -45,7 +45,7 @@
   box-shadow: var(--shadow-xl);
   display: flex;
   flex-direction: column;
-  z-index: 901;
+  z-index: 1100;
   overflow: hidden;
   transform: scale(0.5);
   opacity: 0;
@@ -285,35 +285,41 @@
     width: 50px;
     height: 50px;
     font-size: 20px;
+    z-index: 1102;
   }
 
   .chatWindow {
     position: fixed;
-    top: 70px;
+    top: 120px;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 120px);
     border-radius: 16px 16px 0 0;
-    transform: translateY(calc(100vh - 70px));
+    transform: translateY(calc(100vh - 120px));
     opacity: 0;
+    z-index: 1101;
   }
 
   .chatWindowOpen {
     transform: translateY(0);
     opacity: 1;
+    pointer-events: auto;
   }
 
   .header {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding: 18px 20px;
+    position: relative;
+    z-index: 1103;
   }
 
   .closeButton {
-    width: 36px;
-    height: 36px;
-    font-size: 18px;
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    position: relative;
+    z-index: 1104;
   }
 
   .inputArea {
