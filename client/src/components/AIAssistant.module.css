@@ -296,12 +296,13 @@
     width: 100%;
     height: calc(100vh - 70px);
     border-radius: 16px 16px 0 0;
-    transform: translateY(100%);
-    transform-origin: bottom;
+    transform: translateY(calc(100vh - 70px));
+    opacity: 0;
   }
 
   .chatWindowOpen {
     transform: translateY(0);
+    opacity: 1;
   }
 
   .header {
