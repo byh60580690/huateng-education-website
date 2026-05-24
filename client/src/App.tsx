@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 import Navbar from './components/Navbar';
@@ -10,10 +11,22 @@ import Business from './pages/Business';
 import Culture from './pages/Culture';
 import Cooperation from './pages/Cooperation';
 
+// 滚动到顶部组件
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <I18nextProvider i18n={i18n}>
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <main>
           <Routes>

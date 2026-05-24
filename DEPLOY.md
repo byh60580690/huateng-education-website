@@ -97,7 +97,7 @@ mkdir -p /var/www
 cd /var/www
 
 # 克隆代码（替换为你的仓库地址）
-git clone https://github.com/你的用户名/huateng-education-website.git
+git clone https://github.com/BryanBai001/huateng-education-website.git
 
 # 或者使用 Gitee 国内加速
 git clone https://gitee.com/你的用户名/huateng-education-website.git
@@ -135,6 +135,15 @@ npm install
 
 # 构建 TypeScript
 npm run build
+
+# 如果报错：
+# 删除旧的依赖
+rm -rf node_modules package-lock.json
+# 重新安装（不用 sudo）
+npm install
+# 构建
+npm run build
+
 ```
 
 ### 4.2 配置环境变量
@@ -146,10 +155,13 @@ cat > .env << 'EOF'
 PORT=3001
 
 # 允许的前端域名（替换为你的域名）
-ALLOWED_ORIGINS=http://你的域名.com,https://你的域名.com,http://你的服务器IP
+# ALLOWED_ORIGINS=http://你的域名.com,https://你的域名.com,http://你的服务器IP
+ALLOWED_ORIGINS=http://8.219.0.15
 
 # 千问 API 配置
-QWEN_API_KEY=你的千问API密钥
+# QWEN_API_KEY=你的千问API密钥
+# QWEN_API_URL=https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+QWEN_API_KEY=sk-4a7875dda9f742f7804ec6ccff05dcaf
 QWEN_API_URL=https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
 EOF
 ```
@@ -177,7 +189,7 @@ pm2 save
 
 ### 5.1 修改 API 地址
 
-如果前端需要直接访问后端 API，需要修改 `client/src/services/api.ts`：
+如果前端需要直接访问后端 API，需要修改 `client/src/services/api.ts`（当前架构无需修改）：
 
 ```typescript
 // 开发环境使用代理，生产环境直接访问后端
