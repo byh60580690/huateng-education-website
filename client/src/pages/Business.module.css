@@ -446,24 +446,32 @@
   }
 
   .processStepWrapper {
-    flex-direction: row;
     width: 100%;
-    justify-content: center;
+    max-width: 200px;
   }
 
   .processStep {
     flex-direction: row;
-    width: auto;
+    width: 100%;
     gap: 12px;
+    justify-content: center;
   }
 
   .stepNumber {
     margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .stepLabel {
+    text-align: left;
   }
 
   .processArrow {
     transform: rotate(90deg);
     margin-top: 0;
+    display: block;
+    text-align: center;
+    width: 100%;
   }
 
   .cardsGrid {
