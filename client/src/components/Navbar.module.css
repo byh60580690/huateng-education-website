@@ -251,7 +251,7 @@
   }
 
   .navMenuOpen {
-    max-height: 400px;
+    max-height: 375px;
     padding: 16px 0;
     transition: max-height var(--transition-normal), padding var(--transition-normal);
   }
