@@ -224,11 +224,11 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .logo {
-    margin-left: 0;
+    margin-left: -16px;
   }
 
   .logoImg {
-    height: 31px;
+    height: 23px;
   }
 
   .hamburger {
