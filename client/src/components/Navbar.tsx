@@ -52,7 +52,7 @@ export default function Navbar() {
       <div className={styles.navInner}>
         <NavLink to="/" className={styles.logo} aria-label="华腾集团 - 返回首页">
           <img
-            src="/华腾集团logo.png"
+            src="/华腾集团logo.png?v=2"
             alt="华腾集团 Logo"
             className={styles.logoImg}
           />

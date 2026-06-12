@@ -223,6 +223,14 @@
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  .logo {
+    margin-left: 0;
+  }
+
+  .logoImg {
+    height: 31px;
+  }
+
   .hamburger {
     display: flex;
   }
