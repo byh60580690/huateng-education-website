@@ -45,7 +45,7 @@
       "subtitle": "Years of dedication to study abroad education, witnessing countless students achieve their dreams",
       "items": [
         {
-          "year": "2020",
+          "year": "2018",
           "title": "Foundation",
           "description": "Huateng Group was officially established in Shenzhen, opening a new chapter in study abroad education services"
         },
@@ -97,7 +97,7 @@
         }
       ],
       "moreNews": {
-        "text": "Want to know more? Follow us on Xiaohongshu",
+        "text": "Want to know more? Follow Huateng Group's official account on Xiaohongshu",
         "link": "Visit Xiaohongshu"
       }
     }
@@ -185,6 +185,10 @@
       "title": "Partner Schools",
       "subtitle": "Deep partnerships with high schools to help cultivate outstanding talent",
       "list": [
+        { "name": "THEi (Technological and Higher Education Institute)" },
+        { "name": "Hong Kong Grace College" },
+        { "name": "Hong Kong Nang Yan College" },
+        { "name": "Shenzhen Meizhong School" },
         { "name": "Beijing Normal University Fuqing Affiliated School" },
         { "name": "Pingtan New Century School" },
         { "name": "Putian Lizhi Middle School" },
@@ -319,7 +323,7 @@
     },
     "honor": {
       "title": "Honor Wall",
-      "subtitle": "Witness the glorious achievements and industry recognition of Huateng Group"
+      "subtitle": "Witness the glorious history and honor moments of Huateng students"
     },
     "video": {
       "title": "Culture Video",
