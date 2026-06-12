@@ -253,6 +253,11 @@
   .navMenuOpen {
     max-height: 400px;
     padding: 16px 0;
+    transition: max-height var(--transition-normal), padding var(--transition-normal);
+  }
+
+  .navMenuOpen:has(.langDropdownOpen) {
+    max-height: 500px;
   }
 
   .navLinks {
