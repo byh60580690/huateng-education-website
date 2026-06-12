@@ -37,7 +37,7 @@ export default function Business() {
       </section>
 
       {/* Service Mode Section */}
-      <section className={`${styles.section} container`}>
+      <section id="service-mode" className={`${styles.section} container`}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>{t('business.serviceMode.title')}</h2>
           <p className={styles.sectionSubtitle}>{t('business.serviceMode.subtitle')}</p>

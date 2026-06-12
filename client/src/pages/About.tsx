@@ -14,7 +14,12 @@ const valueItems = [
   { icon: '✨', key: 'excellence' },
 ] as const;
 
-const teamAvatarStyles = [styles.avatarBg1, styles.avatarBg2, styles.avatarBg3] as const;
+// 管理团队职业照配置 - 将图片放在 public/images/team/ 目录下
+// 命名格式：team_1.jpg, team_2.jpg 等
+const teamPhotos = [
+  '/images/team/team_1.jpg',
+  '/images/team/team_2.jpg',
+];
 
 export default function About() {
   const { t } = useTranslation();
@@ -129,7 +134,7 @@ export default function About() {
       </section>
 
       {/* Management Team */}
-      <section className={`${styles.section} ${styles.sectionAlt}`}>
+      <section id="team" className={`${styles.section} ${styles.sectionAlt}`}>
         <div className="container">
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>{t('about.team.title')}</h2>
@@ -138,8 +143,12 @@ export default function About() {
           <div className={styles.teamList}>
             {teamMembers.map((member, idx) => (
               <div key={member.name} className={styles.teamMember}>
-                <div className={`${styles.teamAvatar} ${teamAvatarStyles[idx % 3]}`}>
-                  {member.initial}
+                <div className={styles.teamPhotoWrapper}>
+                  <img
+                    src={teamPhotos[idx]}
+                    alt={member.name}
+                    className={styles.teamPhoto}
+                  />
                 </div>
                 <div className={styles.teamInfo}>
                   <h3 className={styles.teamName}>{member.name}</h3>
@@ -153,7 +162,7 @@ export default function About() {
       </section>
 
       {/* Partners */}
-      <section className={`${styles.section}`}>
+      <section id="partners" className={`${styles.section}`}>
         <div className="container">
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>{t('about.partners.title')}</h2>

@@ -95,7 +95,11 @@
           "title": "Huateng Group Study Abroad Department Conducted THEi Project Presentation at Putian Lizhi Middle School",
           "summary": "The presentation invited multiple Huateng study abroad mentors to explain the latest THEi admission policies and application strategies to over 100 students and parents."
         }
-      ]
+      ],
+      "moreNews": {
+        "text": "Want to know more? Follow us on Xiaohongshu",
+        "link": "Visit Xiaohongshu"
+      }
     }
   },
   "about": {
@@ -312,6 +316,10 @@
     "hero": {
       "title": "Our Culture",
       "subtitle": "United by culture, achieving dreams through teamwork"
+    },
+    "honor": {
+      "title": "Honor Wall",
+      "subtitle": "Witness the glorious achievements and industry recognition of Huateng Group"
     },
     "video": {
       "title": "Culture Video",

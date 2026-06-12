@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import styles from './Home.module.css';
 
 const serviceIcons = ['🌟', '🏛️', '📋', '🏆'];
@@ -13,6 +14,23 @@ const newsImages = [
 
 export default function Home() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
+  const handleTeamClick = () => {
+    navigate('/about#team');
+  };
+
+  const handleResourcesClick = () => {
+    navigate('/about#partners');
+  };
+
+  const handlePlanClick = () => {
+    navigate('/business#service-mode');
+  };
+
+  const handleRateClick = () => {
+    navigate('/culture#honor');
+  };
 
   const historyItems = t('home.history.items', { returnObjects: true }) as Array<{
     year: string;
@@ -47,7 +65,18 @@ export default function Home() {
         <p className={styles.introDescription}>{t('home.intro.description')}</p>
         <div className={styles.servicesGrid}>
           {serviceKeys.map((key, idx) => (
-            <div key={key} className={styles.serviceCard}>
+            <div 
+              key={key} 
+              className={styles.serviceCard}
+              onClick={
+                key === 'team' ? handleTeamClick : 
+                key === 'resources' ? handleResourcesClick : 
+                key === 'plan' ? handlePlanClick : 
+                key === 'rate' ? handleRateClick : 
+                undefined
+              }
+              style={key === 'team' || key === 'resources' || key === 'plan' || key === 'rate' ? { cursor: 'pointer' } : undefined}
+            >
               <div className={styles.serviceIcon}>{serviceIcons[idx]}</div>
               <h3 className={styles.serviceTitle}>
                 {t(`home.intro.services.${key}.title`)}
@@ -105,6 +134,18 @@ export default function Home() {
               </div>
             </article>
           ))}
+        </div>
+        {/* More News Link */}
+        <div className={styles.moreNewsSection}>
+          <p className={styles.moreNewsText}>{t('home.news.moreNews.text')}</p>
+          <a 
+            href="https://xhslink.com/m/7OXUPv16Xnn" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={styles.moreNewsLink}
+          >
+            {t('home.news.moreNews.link')} →
+          </a>
         </div>
       </section>
     </div>

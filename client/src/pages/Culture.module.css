@@ -253,10 +253,43 @@
   color: var(--color-text-muted);
 }
 
+/* ---- Honor Wall Section ---- */
+.honorGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.honorItem {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-border-light);
+  background-color: var(--color-bg-secondary);
+}
+
+.honorItem:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.honorImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 1024px) {
   .galleryGrid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .honorGrid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -290,6 +323,11 @@
   .galleryGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+  }
+
+  .honorGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   .playButton {
