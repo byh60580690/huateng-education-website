@@ -263,21 +263,25 @@ server {
 EOF
 
 示例：
+
 cat > /etc/nginx/sites-available/huateng << 'EOF'
 server {
     listen 80;
-    server_name 8.219.0.15;
+    server_name huatechhk.com;
+    return 301 http://www.huatechhk.com$request_uri;
+}
 
-    # 前端静态文件
+server {
+    listen 80;
+    server_name 8.219.0.15 www.huatechhk.com;
+
     root /var/www/huateng-education-website/client/dist;
     index index.html;
 
-    # 前端路由 - 所有路由都返回 index.html（SPA 应用）
     location / {
         try_files $uri $uri/ /index.html;
     }
 
-    # API 代理到后端
     location /api {
         proxy_pass http://127.0.0.1:3001;
         proxy_http_version 1.1;
@@ -289,13 +293,11 @@ server {
         proxy_cache_bypass $http_upgrade;
     }
 
-    # 静态资源缓存
     location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2)$ {
         expires 1y;
         add_header Cache-Control "public, immutable";
     }
 
-    # Gzip 压缩
     gzip on;
     gzip_types text/plain text/css application/json application/javascript text/xml application/xml;
     gzip_min_length 1000;
@@ -317,9 +319,23 @@ nginx -t
 
 # 重启 Nginx
 systemctl restart nginx
+#systemctl reload nginx
 
 # 设置开机自启
 systemctl enable nginx
+```
+
+### 6.3 配置SSL证书
+```
+# 更新 & 安装 certbot + nginx 插件
+sudo apt update
+sudo apt install certbot python3-certbot-nginx -y
+
+# 2. 一键申请证书并自动配置 Nginx
+sudo certbot --nginx -d huatechhk.com -d www.huatechhk.com
+
+# 测试续期
+sudo certbot renew --dry-run
 ```
 
 ---
