@@ -1334,3 +1334,1192 @@
     padding: 20px 16px;
   }
 }
+
+/* ====== 香港大学升学(本科)板块 ====== */
+.bachelorSection {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* 上部分：香港八大名校 */
+.bachelorTopSection {
+  background: linear-gradient(135deg, 
+    #0d1f33 0%, 
+    #1a3a5c 50%, 
+    #2a5a8c 100%
+  );
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bachelorTopSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(201, 168, 76, 0.02) 40px,
+      rgba(201, 168, 76, 0.02) 42px
+    );
+  pointer-events: none;
+}
+
+.bachelorTopSection .panelTitle {
+  color: var(--color-text-light);
+  border-bottom-color: rgba(201, 168, 76, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.bachelorTopSection .panelTitleIcon {
+  text-shadow: 0 0 12px rgba(201, 168, 76, 0.5);
+}
+
+.hk8UniversitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.hk8UniversityCard {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  text-align: center;
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  backdrop-filter: blur(8px);
+  transition: all var(--transition-normal);
+}
+
+.hk8UniversityCard:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(201, 168, 76, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.uniImageWrapper {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--color-accent);
+  box-shadow: 0 2px 8px rgba(201, 168, 76, 0.2);
+  background: var(--color-bg-primary);
+}
+
+.uniImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.uniInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.uniName {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-accent-light);
+}
+
+.uniAbbr {
+  display: inline-block;
+  padding: 2px 8px;
+  background: rgba(201, 168, 76, 0.2);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-accent);
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.uniDesc {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.4;
+}
+
+/* 中部分：其他院校 */
+.bachelorMiddleSection {
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 24px;
+}
+
+.otherUniversitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.otherUniversityCard {
+  padding: 20px;
+  background: linear-gradient(135deg, 
+    rgba(26, 58, 92, 0.04) 0%, 
+    rgba(42, 90, 140, 0.04) 100%
+  );
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+  transition: all var(--transition-normal);
+}
+
+.otherUniversityCard:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 12px rgba(201, 168, 76, 0.15);
+  transform: translateY(-2px);
+}
+
+.highlightedCard {
+  background: linear-gradient(135deg, 
+    rgba(201, 168, 76, 0.1) 0%, 
+    rgba(201, 168, 76, 0.05) 100%
+  );
+  border-color: rgba(201, 168, 76, 0.3);
+}
+
+.highlightedCard .otherUniName {
+  color: var(--color-accent);
+}
+
+.otherUniName {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.otherUniDesc {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* 下部分：多元申请通道 */
+.bachelorChannelsSection {
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 24px;
+}
+
+.channelsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.channelCard {
+  padding: 24px 20px;
+  background: linear-gradient(135deg, 
+    #0d1f33 0%, 
+    #1a3a5c 50%, 
+    #2a5a8c 100%
+  );
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.channelCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(201, 168, 76, 0.02) 40px,
+      rgba(201, 168, 76, 0.02) 42px
+    );
+  pointer-events: none;
+}
+
+.channelTitle {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-accent-light);
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+}
+
+.channelList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.channelItem {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  padding-left: 16px;
+  position: relative;
+}
+
+.channelItem::before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-size: 8px;
+  top: 4px;
+}
+
+/* 本科服务优势 */
+.bachelorServicesSection {
+  background: linear-gradient(135deg, 
+    #0d1f33 0%, 
+    #1a3a5c 50%, 
+    #2a5a8c 100%
+  );
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bachelorServicesSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(201, 168, 76, 0.02) 40px,
+      rgba(201, 168, 76, 0.02) 42px
+    );
+  pointer-events: none;
+}
+
+.bachelorServicesTitle {
+  text-align: center;
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-accent-light);
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 12px;
+}
+
+.bachelorServicesTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+}
+
+.bachelorServicesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.bachelorServiceCard {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 24px 16px;
+  text-align: center;
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  backdrop-filter: blur(8px);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.bachelorServiceCard:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(201, 168, 76, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.bachelorServiceNumber {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, var(--color-accent-light) 0%, var(--color-accent) 100%);
+  color: #0d1f33;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(201, 168, 76, 0.3);
+}
+
+.bachelorServiceTitle {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-accent-light);
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.bachelorServiceDesc {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+
+/* 本科板块响应式 */
+@media (max-width: 1024px) {
+  .hk8UniversitiesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .otherUniversitiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .channelsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bachelorServicesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .bachelorTopSection {
+    padding: 20px;
+  }
+
+  .hk8UniversitiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .hk8UniversityCard {
+    padding: 16px 12px;
+  }
+
+  .bachelorMiddleSection {
+    padding: 20px;
+  }
+
+  .otherUniversitiesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bachelorChannelsSection {
+    padding: 20px;
+  }
+
+  .channelsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .channelCard {
+    padding: 20px 16px;
+  }
+
+  .bachelorServicesSection {
+    padding: 20px;
+  }
+
+  .bachelorServicesGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .bachelorServiceCard {
+    padding: 20px 16px;
+  }
+}
+
+/* ====== 香港硕士申请板块 ====== */
+.masterSection {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* 上部分：热门申请方向 */
+.masterTopSection {
+  background: linear-gradient(135deg, 
+    #0d1f33 0%, 
+    #1a3a5c 50%, 
+    #2a5a8c 100%
+  );
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.masterTopSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(201, 168, 76, 0.02) 40px,
+      rgba(201, 168, 76, 0.02) 42px
+    );
+  pointer-events: none;
+}
+
+.masterTopSection .panelTitle {
+  color: var(--color-text-light);
+  border-bottom-color: rgba(201, 168, 76, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.masterTopSection .panelTitleIcon {
+  text-shadow: 0 0 12px rgba(201, 168, 76, 0.5);
+}
+
+.masterFieldsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.masterFieldCard {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  backdrop-filter: blur(8px);
+  transition: all var(--transition-normal);
+}
+
+.masterFieldCard:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(201, 168, 76, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.masterFieldCategory {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-accent-light);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+}
+
+.masterFieldPrograms {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+/* 中部分：左右布局 */
+.masterMiddleSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.masterLeftPanel,
+.masterRightPanel {
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+/* 可申请院校 */
+.masterUniversitiesBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.masterUniCategory {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.masterUniList {
+  padding: 14px 18px;
+  background: linear-gradient(135deg, 
+    rgba(26, 58, 92, 0.06) 0%, 
+    rgba(42, 90, 140, 0.06) 100%
+  );
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  border-left: 3px solid var(--color-accent);
+}
+
+/* 申请要求表格 */
+.masterRequirementsTable {
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.requirementTableHeader {
+  background: linear-gradient(135deg, 
+    #0d1f33 0%, 
+    #1a3a5c 100%
+  );
+  padding: 12px 16px;
+}
+
+.requirementHeaderItem {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-accent-light);
+}
+
+.requirementTableBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.requirementRow {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-border-light);
+  transition: background var(--transition-normal);
+}
+
+.requirementRow:last-child {
+  border-bottom: none;
+}
+
+.requirementRow:hover {
+  background: linear-gradient(135deg, 
+    rgba(201, 168, 76, 0.05) 0%, 
+    rgba(201, 168, 76, 0.02) 100%
+  );
+}
+
+.requirementItem {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.requirementDesc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+/* 留港发展路径 */
+.masterStaySection {
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 24px;
+}
+
+.stayPathFlow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.stayPathItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, 
+    #0d1f33 0%, 
+    #1a3a5c 50%, 
+    #2a5a8c 100%
+  );
+  border-radius: var(--radius-lg);
+  position: relative;
+  min-width: 140px;
+}
+
+.stayPathItem::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(201, 168, 76, 0.02) 40px,
+      rgba(201, 168, 76, 0.02) 42px
+    );
+  border-radius: var(--radius-lg);
+  pointer-events: none;
+}
+
+.stayPathStage {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-accent-light);
+  position: relative;
+  z-index: 1;
+}
+
+.stayPathDesc {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.85);
+  position: relative;
+  z-index: 1;
+}
+
+.stayPathArrow {
+  color: var(--color-accent);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 16px;
+  text-shadow: 0 0 8px rgba(201, 168, 76, 0.4);
+}
+
+/* 我们的服务 */
+.masterServicesSection {
+  background: linear-gradient(135deg, 
+    #0d1f33 0%, 
+    #1a3a5c 50%, 
+    #2a5a8c 100%
+  );
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.masterServicesSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(201, 168, 76, 0.02) 40px,
+      rgba(201, 168, 76, 0.02) 42px
+    );
+  pointer-events: none;
+}
+
+.masterServicesTitle {
+  text-align: center;
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-accent-light);
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 12px;
+}
+
+.masterServicesTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+}
+
+.masterServicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.masterServiceCard {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  text-align: center;
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  backdrop-filter: blur(8px);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.masterServiceCard:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(201, 168, 76, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.masterServiceNumber {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, var(--color-accent-light) 0%, var(--color-accent) 100%);
+  color: #0d1f33;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(201, 168, 76, 0.3);
+}
+
+.masterServiceTitle {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-accent-light);
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.masterServiceDesc {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+
+/* 硕士板块响应式 */
+@media (max-width: 1024px) {
+  .masterFieldsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .masterMiddleSection {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .masterServicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stayPathItem {
+    min-width: 120px;
+    padding: 16px 20px;
+  }
+
+  .stayPathArrow {
+    margin: 0 12px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .masterTopSection {
+    padding: 20px;
+  }
+
+  .masterFieldsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .masterFieldCard {
+    padding: 16px 12px;
+  }
+
+  .masterLeftPanel,
+  .masterRightPanel {
+    padding: 20px;
+  }
+
+  .masterStaySection {
+    padding: 20px;
+  }
+
+  .stayPathFlow {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .stayPathItem {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .stayPathArrow {
+    transform: rotate(90deg);
+    margin: 0;
+  }
+
+  .masterServicesSection {
+    padding: 20px;
+  }
+
+  .masterServicesGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .masterServiceCard {
+    padding: 20px 16px;
+  }
+}
+
+/* ====== 博士申请板块 ====== */
+.phdSection {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* 上部分：研究型博士PhD */
+.phdTopSection {
+  background: linear-gradient(135deg, 
+    #0d1f33 0%, 
+    #1a3a5c 50%, 
+    #2a5a8c 100%
+  );
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.phdTopSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(201, 168, 76, 0.02) 40px,
+      rgba(201, 168, 76, 0.02) 42px
+    );
+  pointer-events: none;
+}
+
+.phdTopSection .panelTitle {
+  color: var(--color-text-light);
+  border-bottom-color: rgba(201, 168, 76, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.phdTopSection .panelTitleIcon {
+  text-shadow: 0 0 12px rgba(201, 168, 76, 0.5);
+}
+
+.phdResearchGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.phdResearchCard {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  backdrop-filter: blur(8px);
+  transition: all var(--transition-normal);
+}
+
+.phdResearchCard:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(201, 168, 76, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.phdResearchLabel {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-accent-light);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+}
+
+.phdResearchContent {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+/* 中间部分：商业授课博士 */
+.phdMiddleSection {
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 24px;
+}
+
+.phdBusinessGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.phdBusinessCard {
+  background: linear-gradient(135deg, 
+    rgba(26, 58, 92, 0.04) 0%, 
+    rgba(42, 90, 140, 0.04) 100%
+  );
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border-light);
+  transition: all var(--transition-normal);
+}
+
+.phdBusinessCard:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 16px rgba(201, 168, 76, 0.15);
+  transform: translateY(-2px);
+}
+
+.phdBusinessHeader {
+  background: linear-gradient(135deg, 
+    #0d1f33 0%, 
+    #1a3a5c 100%
+  );
+  padding: 16px 20px;
+}
+
+.phdBusinessTitle {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-accent-light);
+}
+
+.phdBusinessContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.phdBusinessItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.phdBusinessLabel {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.phdBusinessText {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+/* 下部分：全流程服务 */
+.phdServicesSection {
+  background: linear-gradient(135deg, 
+    #0d1f33 0%, 
+    #1a3a5c 50%, 
+    #2a5a8c 100%
+  );
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.phdServicesSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(201, 168, 76, 0.02) 40px,
+      rgba(201, 168, 76, 0.02) 42px
+    );
+  pointer-events: none;
+}
+
+.phdServicesTitle {
+  text-align: center;
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-accent-light);
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 12px;
+}
+
+.phdServicesTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+}
+
+.phdServicesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.phdServiceCard {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 24px 16px;
+  text-align: center;
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  backdrop-filter: blur(8px);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.phdServiceCard:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(201, 168, 76, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.phdServiceNumber {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, var(--color-accent-light) 0%, var(--color-accent) 100%);
+  color: #0d1f33;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(201, 168, 76, 0.3);
+}
+
+.phdServiceStep {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-accent-light);
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.phdServiceDesc {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+
+/* 博士板块响应式 */
+@media (max-width: 1024px) {
+  .phdResearchGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .phdServicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .phdTopSection {
+    padding: 20px;
+  }
+
+  .phdResearchGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .phdResearchCard {
+    padding: 16px 12px;
+  }
+
+  .phdMiddleSection {
+    padding: 20px;
+  }
+
+  .phdBusinessGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .phdServicesSection {
+    padding: 20px;
+  }
+
+  .phdServicesGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .phdServiceCard {
+    padding: 20px 16px;
+  }
+}
