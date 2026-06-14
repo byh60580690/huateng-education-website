@@ -19,8 +19,10 @@ const valueItems = [
 const teamPhotos = [
   '/images/team/team_1.jpg',
   '/images/team/team_2.jpg',
+  '/images/team/team_6.jpg',
   '/images/team/team_3.jpg',
   '/images/team/team_4.jpg',
+  '/images/team/team_5.jpg',
 ];
 
 export default function About() {
