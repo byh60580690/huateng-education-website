@@ -478,7 +478,7 @@ tail -f /var/log/nginx/error.log   # 错误日志
 ### 更新部署
 
 ```bash
-sudo su
+sudo su 
 
 cd /var/www/huateng-education-website
 
