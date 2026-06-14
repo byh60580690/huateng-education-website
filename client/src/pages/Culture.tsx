@@ -20,16 +20,12 @@ type HonorCategory = 'hk8' | 'hkQuality' | 'singapore' | 'overseas';
 
 interface HonorCategoryConfig {
   key: HonorCategory;
-  label: string;
-  description: string;
   images: string[];
 }
 
 const honorCategories: HonorCategoryConfig[] = [
   {
     key: 'hk8',
-    label: '香港八大名校录取',
-    description: '港大HKU · 中大CUHK · 科大HKUST · 城大CityU · 理大PolyU · 浸会HKBU',
     images: [
       // HKU: 3张
       '/images/honor/honor_hku_1.jpg',
@@ -59,8 +55,6 @@ const honorCategories: HonorCategoryConfig[] = [
   },
   {
     key: 'hkQuality',
-    label: '香港优质院校录取',
-    description: '高科院THEi · 都会大学 · 恒生大学 · 东华学院 · 树仁大学',
     images: [
       // THEi: 3张
       '/images/honor/honor_thei_1.jpg',
@@ -83,8 +77,6 @@ const honorCategories: HonorCategoryConfig[] = [
   },
   {
     key: 'singapore',
-    label: '新加坡名校录取',
-    description: '新加坡国立大学NUS · 南洋理工NTU · 新加坡管理大学SMU',
     images: [
       // NUS: 5张
       '/images/honor/honor_nus_1.jpg',
@@ -96,8 +88,6 @@ const honorCategories: HonorCategoryConfig[] = [
   },
   {
     key: 'overseas',
-    label: '海外名校录取',
-    description: '美国TOP50名校 · 英国G5 · 澳洲八大 · 加拿大名校',
     images: [
       // Stanford: 1张
       '/images/honor/honor_stanford_1.jpg',
@@ -122,6 +112,10 @@ export default function Culture() {
   const galleryItems = t('culture.gallery.items', { returnObjects: true }) as Array<{ caption: string }>;
 
   const currentCategory = honorCategories.find(c => c.key === activeHonorCategory);
+  
+  // 从 i18n 获取分类标签和学校列表
+  const getHonorLabel = (key: HonorCategory) => t(`culture.honor.categories.${key}.label`);
+  const getHonorSchools = (key: HonorCategory) => t(`culture.honor.categories.${key}.schools`, { returnObjects: true }) as string[];
 
   const openLightbox = (index: number) => {
     setLightboxIndex(index);
@@ -149,72 +143,87 @@ export default function Culture() {
       </section>
 
       {/* Honor Wall Section */}
-      <section id="honor" className={`${styles.section} container`}>
-        <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>{t('culture.honor.title')}</h2>
-          <p className={styles.sectionSubtitle}>{t('culture.honor.subtitle')}</p>
-        </div>
-        
-        {/* Category Tabs */}
-        <div className={styles.honorTabs}>
-          {honorCategories.map((category) => (
-            <button
-              key={category.key}
-              className={`${styles.honorTab} ${activeHonorCategory === category.key ? styles.honorTabActive : ''}`}
-              onClick={() => setActiveHonorCategory(category.key)}
-            >
-              {category.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Category Description */}
-        {currentCategory && (
-          <div className={styles.honorCategoryDesc}>
-            {currentCategory.description}
+      <section id="honor" className={`${styles.section} ${styles.honorSection}`}>
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>{t('culture.honor.title')}</h2>
+            <p className={styles.sectionSubtitle}>{t('culture.honor.subtitle')}</p>
           </div>
-        )}
+          
+          {/* Category Tabs */}
+          <div className={styles.honorTabs}>
+            {honorCategories.map((category) => (
+              <button
+                key={category.key}
+                className={`${styles.honorTab} ${activeHonorCategory === category.key ? styles.honorTabActive : ''}`}
+                onClick={() => setActiveHonorCategory(category.key)}
+              >
+                {getHonorLabel(category.key)}
+              </button>
+            ))}
+          </div>
 
-        {/* Honor Grid */}
-        <div className={styles.honorGrid}>
-          {currentCategory?.images.map((src, idx) => (
-            <div key={idx} className={styles.honorItem}>
-              <img
-                src={src}
-                alt={`荣誉证书 ${idx + 1}`}
-                className={styles.honorImage}
-              />
+          {/* Category Description */}
+          {currentCategory && (
+            <div className={styles.honorSchoolTags}>
+              {getHonorSchools(currentCategory.key).map((school, idx, arr) => (
+                <span key={idx}>
+                  <span className={styles.honorSchoolName}>{school}</span>
+                  {idx < arr.length - 1 && (
+                    <span className={styles.honorSchoolDot}> · </span>
+                  )}
+                </span>
+              ))}
             </div>
-          ))}
+          )}
+
+          {/* Honor Grid */}
+          <div className={styles.honorGridWrapper}>
+            <div className={styles.honorGrid}>
+              {currentCategory?.images.map((src, idx) => (
+                <div key={idx} className={styles.honorItem}>
+                  <img
+                    src={src}
+                    alt={`荣誉证书 ${idx + 1}`}
+                    className={styles.honorImage}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Gallery Section */}
-      <section className={`${styles.section} ${styles.sectionAlt}`}>
+      <section className={`${styles.section} ${styles.gallerySection}`}>
         <div className="container">
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>{t('culture.gallery.title')}</h2>
             <p className={styles.sectionSubtitle}>{t('culture.gallery.subtitle')}</p>
           </div>
-          <div className={styles.galleryGrid}>
-            {galleryItems.map((item, idx) => (
-              <div key={idx}>
-                <div
-                  className={styles.galleryItem}
-                  onClick={() => openLightbox(idx)}
-                >
-                  <img
-                    src={galleryImages[idx]}
-                    alt={item.caption}
-                    className={styles.galleryImage}
-                  />
-                  <div className={styles.galleryOverlay}>
-                    <div className={styles.galleryZoomIcon}>🔍</div>
+          <div className={styles.galleryGridWrapper}>
+            <div className={styles.galleryGrid}>
+              {galleryItems.map((item, idx) => (
+                <div key={idx} className={styles.galleryItemWrapper}>
+                  <div
+                    className={styles.galleryItem}
+                    onClick={() => openLightbox(idx)}
+                  >
+                    <img
+                      src={galleryImages[idx]}
+                      alt={item.caption}
+                      className={styles.galleryImage}
+                    />
+                    <div className={styles.galleryOverlay}>
+                      <div className={styles.galleryZoomIcon}>
+                        <span className={styles.galleryZoomText}>查看详情</span>
+                      </div>
+                    </div>
                   </div>
+                  <p className={styles.galleryCaption}>{item.caption}</p>
                 </div>
-                <p className={styles.galleryCaption}>{item.caption}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>

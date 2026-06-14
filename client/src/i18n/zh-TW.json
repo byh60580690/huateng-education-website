@@ -323,7 +323,25 @@
     },
     "honor": {
       "title": "榮譽牆",
-      "subtitle": "見證華騰學子的輝煌歷史與榮譽時刻"
+      "subtitle": "見證華騰學子的輝煌歷史與榮譽時刻",
+      "categories": {
+        "hk8": {
+          "label": "香港八大名校錄取",
+          "schools": ["港大HKU", "中大CUHK", "科大HKUST", "城大CityU", "理大PolyU", "浸會HKBU"]
+        },
+        "hkQuality": {
+          "label": "香港優質院校錄取",
+          "schools": ["高科院THEi", "都會大學", "恆生大學", "東華學院", "樹仁大學"]
+        },
+        "singapore": {
+          "label": "新加坡名校錄取",
+          "schools": ["新加坡國立大學NUS", "南洋理工NTU", "新加坡管理大學SMU", "新加坡理工SUSS"]
+        },
+        "overseas": {
+          "label": "海外名校錄取",
+          "schools": ["美國TOP50名校", "英國G5", "澳洲八大", "加拿大名校"]
+        }
+      }
     },
     "video": {
       "title": "文化視頻",

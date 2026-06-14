@@ -323,7 +323,25 @@
     },
     "honor": {
       "title": "Honor Wall",
-      "subtitle": "Witness the glorious history and honor moments of Huateng students"
+      "subtitle": "Witness the glorious history and honor moments of Huateng students",
+      "categories": {
+        "hk8": {
+          "label": "Hong Kong Top 8 Universities",
+          "schools": ["HKU", "CUHK", "HKUST", "CityU", "PolyU", "HKBU"]
+        },
+        "hkQuality": {
+          "label": "Hong Kong Quality Institutions",
+          "schools": ["THEi", "Metropolitan University", "Hang Seng University", "Tung Wah College", "Shue Yan University"]
+        },
+        "singapore": {
+          "label": "Singapore Top Universities",
+          "schools": ["NUS", "NTU", "SMU", "SUSS"]
+        },
+        "overseas": {
+          "label": "Overseas Top Universities",
+          "schools": ["US Top 50", "UK G5", "Australia Group of Eight", "Canadian Universities"]
+        }
+      }
     },
     "video": {
       "title": "Culture Video",

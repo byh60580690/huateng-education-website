@@ -38,21 +38,46 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, var(--color-primary-light) 100%);
+  background: linear-gradient(180deg, 
+    #0d1f33 0%, 
+    #1a3a5c 30%, 
+    #2a5a8c 70%, 
+    #1a3a5c 100%
+  );
   overflow: hidden;
   padding: 0 var(--container-padding);
 }
 
+/* 装饰性背景图案 */
 .banner::before {
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(42, 90, 140, 0.15) 0%, transparent 50%);
+  background-image: 
+    /* 金色菱形花纹 */
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(201, 168, 76, 0.03) 40px,
+      rgba(201, 168, 76, 0.03) 42px
+    ),
+    /* 反向金色菱形花纹 */
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 40px,
+      rgba(201, 168, 76, 0.03) 40px,
+      rgba(201, 168, 76, 0.03) 42px
+    ),
+    /* 中心光晕 */
+    radial-gradient(ellipse at 50% 40%, rgba(201, 168, 76, 0.1) 0%, transparent 50%),
+    /* 顶部光晕 */
+    radial-gradient(ellipse at 20% 30%, rgba(42, 90, 140, 0.15) 0%, transparent 40%);
   pointer-events: none;
 }
 
+/* 底部渐变过渡 */
 .banner::after {
   content: '';
   position: absolute;
@@ -78,6 +103,9 @@
   margin-bottom: 24px;
   letter-spacing: 4px;
   line-height: var(--leading-tight);
+  text-shadow: 
+    0 0 30px rgba(201, 168, 76, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .bannerSubtitle {

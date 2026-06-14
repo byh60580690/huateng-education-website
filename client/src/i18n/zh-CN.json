@@ -323,7 +323,25 @@
     },
     "honor": {
       "title": "荣誉墙",
-      "subtitle": "见证华腾学子的辉煌历史与荣誉时刻"
+      "subtitle": "见证华腾学子的辉煌历史与荣誉时刻",
+      "categories": {
+        "hk8": {
+          "label": "香港八大名校录取",
+          "schools": ["港大HKU", "中大CUHK", "科大HKUST", "城大CityU", "理大PolyU", "浸会HKBU"]
+        },
+        "hkQuality": {
+          "label": "香港优质院校录取",
+          "schools": ["高科院THEi", "都会大学", "恒生大学", "东华学院", "树仁大学"]
+        },
+        "singapore": {
+          "label": "新加坡名校录取",
+          "schools": ["新加坡国立大学NUS", "南洋理工NTU", "新加坡管理大学SMU", "新加坡理工SUSS"]
+        },
+        "overseas": {
+          "label": "海外名校录取",
+          "schools": ["美国TOP50名校", "英国G5", "澳洲八大", "加拿大名校"]
+        }
+      }
     },
     "video": {
       "title": "文化视频",
