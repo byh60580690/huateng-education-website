@@ -142,9 +142,11 @@ export default function Business() {
                     {k12PartnerSchools.map((school, idx) => (
                       <div key={idx} className={styles.partnerSchoolCard}>
                         <div className={styles.schoolImageWrapper}>
-                          <div className={styles.schoolImagePlaceholder}>
-                            <span>图片位</span>
-                          </div>
+                          <img
+                            src={school.image}
+                            alt={school.name}
+                            className={styles.schoolImage}
+                          />
                         </div>
                         <div className={styles.schoolInfo}>
                           <h4 className={styles.schoolName}>{school.name}</h4>

@@ -478,6 +478,8 @@ tail -f /var/log/nginx/error.log   # 错误日志
 ### 更新部署
 
 ```bash
+sudo su
+
 cd /var/www/huateng-education-website
 
 # 拉取最新代码
