@@ -22,8 +22,8 @@ const teamPhotos = [
   '/images/team/team_6.jpg',
   '/images/team/team_3.jpg',
   '/images/team/team_4.jpg',
-  '/images/team/team_5.jpg',
   '/images/team/team_7.jpg',
+  '/images/team/team_5.jpg',
 ];
 
 export default function About() {
