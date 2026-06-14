@@ -20,7 +20,7 @@
     },
     "intro": {
       "title": "About Huateng Education",
-      "description": "Huateng Education is a premium and professional study abroad education group, specializing in undergraduate and postgraduate applications, with deep expertise in Hong Kong bachelor's degree admissions. We are committed to providing personalized, comprehensive academic planning and application services to help every student achieve their goal of entering top universities.",
+      "description": "Huateng Education is a premium and professional study abroad education group, with business covering primary and secondary schools, associate degrees, bachelor's degrees, master's degrees, and PhDs across all levels of overseas academic advancement. With deep industry expertise, we provide personalized and comprehensive academic planning and application services to help every student successfully enter the world's top universities.",
       "services": {
         "team": {
           "title": "Expert Team",
@@ -47,27 +47,27 @@
         {
           "year": "2018",
           "title": "Foundation",
-          "description": "Huateng Education was officially established in Shenzhen, opening a new chapter in study abroad education services"
+          "description": "Huateng Education was officially established in Hong Kong, opening a new chapter in education services"
         },
         {
           "year": "2021",
           "title": "Hong Kong Expansion",
-          "description": "Successfully expanded into Hong Kong bachelor's degree admissions, becoming an industry pioneer"
+          "description": "Successfully expanded Hong Kong degree-level academic services across all levels, becoming an industry pioneer"
         },
         {
           "year": "2022",
           "title": "Nationwide Presence",
-          "description": "Partnered with schools in Beijing, Shanghai, and Guangzhou, with service network covering the nation"
+          "description": "Established nationwide presence, collaborating with renowned schools and industry benchmark institutions, with standardized service system covering the country"
         },
         {
           "year": "2023",
           "title": "Designated Partner",
-          "description": "Became the designated partner of Hong Kong Grace Christ College of Education, THEi, and other institutions"
+          "description": "Established official authorized partnerships with Hong Kong, Macau, and overseas institutions, becoming a certified designated academic partner with direct admission channels"
         },
         {
           "year": "2024",
           "title": "Industry Benchmark",
-          "description": "Served over 100 students cumulatively, with acceptance rates consistently leading the industry"
+          "description": "Cumulatively served over 500+ students, with acceptance rates consistently leading the industry"
         },
         {
           "year": "2025",
@@ -109,7 +109,7 @@
     },
     "background": {
       "title": "Our Background",
-      "description": "Founded in 2020, Huateng Education is a premium and professional study abroad education group. The group specializes in undergraduate and postgraduate study abroad applications, with particularly deep expertise and an outstanding reputation in Hong Kong bachelor's degree admissions. Over the years, Huateng Education has consistently upheld a student-centered service philosophy, helping over 100 students successfully enter the world's top universities, with acceptance rates consistently leading the industry."
+      "description": "Founded in 2018, Huateng Education is a premium and professional study abroad education group. The group specializes in academic planning for primary and secondary schools, associate degrees, bachelor's degrees, master's degrees, and PhDs, with deep expertise and an outstanding reputation in the academic advancement field. Over the years, Huateng has consistently upheld a student-centered service philosophy, helping over 500+ students successfully enter the world's top universities, with acceptance rates consistently leading the industry."
     },
     "visionMission": {
       "title": "Vision & Mission",
@@ -177,7 +177,7 @@
           "name": "Liu Huajing",
           "initial": "L",
           "role": "Chief Operating Officer",
-          "bio": "Has many years of experience in study abroad consulting and operations management. Led the establishment of Huateng Education's standardized service system and institutional operations management framework, driving continuous improvement in service quality."
+          "bio": "Graduated from the Chinese University of Hong Kong Faculty of Medicine, currently serves as President of the CUHK Golf Club. Has complete A-Level study experience and is a firsthand witness to Hong Kong international curriculum academic advancement. Deeply engaged in cross-border education, study abroad consulting, and institutional operations management for many years, with in-depth knowledge of Hong Kong's local education ecosystem, international curriculum learning challenges, and university application logic. Led the establishment of Huateng Education's standardized customer service system and full-process institutional operations management framework, forming closed-loop control from consultation, student planning follow-up to quality supervision, continuously optimizing the group's overall service standards and delivery experience. Leveraging her own study and campus management experience, she builds an education service platform that better meets the practical needs of cross-border students."
         },
         {
           "name": "Demi Deng",
@@ -299,14 +299,15 @@
       "targetGroups": [
         { "label": "Gaokao Underperformers", "desc": "Opportunity for quality universities even below cutoff" },
         { "label": "Vocational Graduates", "desc": "Apply with school transcripts, no Gaokao needed" },
-        { "label": "Budget-conscious Students", "desc": "Associate degree tuition only HKD 50-70K/year, much lower than bachelor's" },
+        { "label": "Budget-conscious Students", "desc": "Associate degree tuition only HKD 60-80K/year, much lower than bachelor's" },
         { "label": "Mainland College Students", "desc": "Restart with associate degree, transfer to better universities" }
       ],
       "colleges": [
         "HKU School of Professional and Continuing Education (HKU SPACE)",
         "CUHK School of Continuing and Professional Studies (CUSCS)",
         "PolyU Hong Kong Community College (HKCC)",
-        "HKBU College of International Education (HKBU CIE)"
+        "HKBU College of International Education (HKBU CIE)",
+        "Lingnan University Institute of Further Education (LIFE)"
       ],
       "services": [
         { "title": "Free Assessment", "desc": "Eligibility check, matching suitable universities and programs" },
