@@ -254,6 +254,54 @@
 }
 
 /* ---- Honor Wall Section ---- */
+.honorTabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.honorTab {
+  padding: 12px 24px;
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  white-space: nowrap;
+}
+
+.honorTab:hover {
+  border-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.honorTabActive {
+  color: var(--color-text-light);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-color: transparent;
+}
+
+.honorTabActive:hover {
+  color: var(--color-text-light);
+}
+
+.honorCategoryDesc {
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: 32px;
+  padding: 12px 24px;
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+  display: inline-block;
+  width: 100%;
+}
+
 .honorGrid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -323,6 +371,20 @@
   .galleryGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+  }
+
+  .honorTabs {
+    gap: 8px;
+  }
+
+  .honorTab {
+    padding: 8px 16px;
+    font-size: var(--text-sm);
+  }
+
+  .honorCategoryDesc {
+    font-size: var(--text-xs);
+    padding: 8px 16px;
   }
 
   .honorGrid {
