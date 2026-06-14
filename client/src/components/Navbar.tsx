@@ -50,10 +50,10 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar} role="navigation" aria-label="Main navigation">
       <div className={styles.navInner}>
-        <NavLink to="/" className={styles.logo} aria-label="华腾集团 - 返回首页">
+        <NavLink to="/" className={styles.logo} aria-label="华腾教育 - 返回首页">
           <img
             src="/华腾集团logo.png?v=2"
-            alt="华腾集团 Logo"
+            alt="华腾教育 Logo"
             className={styles.logoImg}
           />
         </NavLink>

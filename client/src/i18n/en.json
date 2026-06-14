@@ -15,12 +15,12 @@
   "home": {
     "banner": {
       "title": "Dream Big, Reach Higher",
-      "subtitle": "Huateng Group — Dedicated to undergraduate and postgraduate study abroad applications, empowering every student to enter the world's top universities",
+      "subtitle": "Huateng Education — Dedicated to undergraduate and postgraduate study abroad applications, empowering every student to enter the world's top universities",
       "cta": "Learn More"
     },
     "intro": {
-      "title": "About Huateng Group",
-      "description": "Huateng Group is a premium and professional study abroad education group, specializing in undergraduate and postgraduate applications, with deep expertise in Hong Kong bachelor's degree admissions. We are committed to providing personalized, comprehensive academic planning and application services to help every student achieve their goal of entering top universities.",
+      "title": "About Huateng Education",
+      "description": "Huateng Education is a premium and professional study abroad education group, specializing in undergraduate and postgraduate applications, with deep expertise in Hong Kong bachelor's degree admissions. We are committed to providing personalized, comprehensive academic planning and application services to help every student achieve their goal of entering top universities.",
       "services": {
         "team": {
           "title": "Expert Team",
@@ -47,7 +47,7 @@
         {
           "year": "2018",
           "title": "Foundation",
-          "description": "Huateng Group was officially established in Shenzhen, opening a new chapter in study abroad education services"
+          "description": "Huateng Education was officially established in Shenzhen, opening a new chapter in study abroad education services"
         },
         {
           "year": "2021",
@@ -78,7 +78,7 @@
     },
     "news": {
       "title": "Latest News",
-      "subtitle": "Stay updated with Huateng Group's latest news and events",
+      "subtitle": "Stay updated with Huateng Education's latest news and events",
       "items": [
         {
           "date": "2026-04-28",
@@ -87,33 +87,33 @@
         },
         {
           "date": "2026-01-29",
-          "title": "Huateng Group Partnered with Beijing Normal University Fuqing Affiliated School for THEi Information Session",
+          "title": "Huateng Education Partnered with Beijing Normal University Fuqing Affiliated School for THEi Information Session",
           "summary": "This partnership provided Huateng students with first-hand Hong Kong study abroad information and more quality application channels and scholarship opportunities."
         },
         {
           "date": "2026-01-17",
-          "title": "Huateng Group Study Abroad Department Conducted THEi Project Presentation at Putian Lizhi Middle School",
+          "title": "Huateng Education Study Abroad Department Conducted THEi Project Presentation at Putian Lizhi Middle School",
           "summary": "The presentation invited multiple Huateng study abroad mentors to explain the latest THEi admission policies and application strategies to over 100 students and parents."
         }
       ],
       "moreNews": {
-        "text": "Want to know more? Follow Huateng Group's official account on Xiaohongshu",
+        "text": "Want to know more? Follow Huateng Education's official account on Xiaohongshu",
         "link": "Visit Xiaohongshu"
       }
     }
   },
   "about": {
     "hero": {
-      "title": "About Huateng Group",
+      "title": "About Huateng Education",
       "subtitle": "Years of dedication to study abroad education, trusted by students for our expertise and integrity"
     },
     "background": {
       "title": "Our Background",
-      "description": "Founded in 2020, Huateng Group is a premium and professional study abroad education group. The group specializes in undergraduate and postgraduate study abroad applications, with particularly deep expertise and an outstanding reputation in Hong Kong bachelor's degree admissions. Over the years, Huateng Group has consistently upheld a student-centered service philosophy, helping over 100 students successfully enter the world's top universities, with acceptance rates consistently leading the industry."
+      "description": "Founded in 2020, Huateng Education is a premium and professional study abroad education group. The group specializes in undergraduate and postgraduate study abroad applications, with particularly deep expertise and an outstanding reputation in Hong Kong bachelor's degree admissions. Over the years, Huateng Education has consistently upheld a student-centered service philosophy, helping over 100 students successfully enter the world's top universities, with acceptance rates consistently leading the industry."
     },
     "visionMission": {
       "title": "Vision & Mission",
-      "intro": "Since its founding, Huateng Group has regarded \"empowering students\" as its foundation. We have cultivated deep expertise in education, assembling a team of senior study abroad consultants, overseas returnee scholars, and international course instructors. They are not only industry experts but also individuals who have walked this path themselves, deeply understanding every challenge and aspiration along the educational journey.",
+      "intro": "Since its founding, Huateng Education has regarded \"empowering students\" as its foundation. We have cultivated deep expertise in education, assembling a team of senior study abroad consultants, overseas returnee scholars, and international course instructors. They are not only industry experts but also individuals who have walked this path themselves, deeply understanding every challenge and aspiration along the educational journey.",
       "vision": {
         "title": "Our Vision",
         "description": "To become the world's leading study abroad education service group, building bridges to prestigious universities for students around the globe."
@@ -125,7 +125,7 @@
     },
     "values": {
       "title": "Core Values",
-      "subtitle": "Four core values guiding Huateng Group forward",
+      "subtitle": "Four core values guiding Huateng Education forward",
       "items": {
         "professional": {
           "title": "Professionalism",
@@ -171,13 +171,25 @@
           "name": "Liu Hualun",
           "initial": "L",
           "role": "Founder & CEO",
-          "bio": "Has many years of experience in education industry management. Founded Huateng Group in 2020, leading the team from scratch to become an industry-leading study abroad education group."
+          "bio": "Deeply engaged in the education field of the Guangdong-Hong Kong-Macao Greater Bay Area, with many years of experience in education industry management. Founded Huateng Education in 2018, leading the team from scratch to steadily develop into a comprehensive education service institution focusing on cross-border academic advancement. Graduated from Hong Kong Baptist University with a major in Finance, relying on a solid academic foundation, he has long been deeply engaged in Hong Kong and overseas study services. With years of experience in the industry, he has gained profound insights into the serious policy information gap and resource asymmetry between the Mainland and Hong Kong. To break down industry information barriers and avoid fragmented consulting chaos, he established a standardized, transparent one-stop cross-border education service system. Under his overall operation, the institution's core business covers partner institution academic consulting services, and diversified professional academic services including full-stage application planning from primary and secondary schools to doctoral programs at home and abroad."
         },
         {
           "name": "Liu Huajing",
           "initial": "L",
           "role": "Chief Operating Officer",
-          "bio": "Has many years of experience in study abroad consulting and operations management. Led the establishment of Huateng Group's standardized service system and institutional operations management framework, driving continuous improvement in service quality."
+          "bio": "Has many years of experience in study abroad consulting and operations management. Led the establishment of Huateng Education's standardized service system and institutional operations management framework, driving continuous improvement in service quality."
+        },
+        {
+          "name": "Demi Deng",
+          "initial": "D",
+          "role": "Senior Admissions Consultant",
+          "bio": "With a solid Hong Kong local education background, she has been deeply engaged in the Hong Kong higher education field for many years, specializing in all-stage institution applications and document writing. She has helped nearly 100 students gain admission to Hong Kong institutions, excels at customizing personalized study plans based on student backgrounds, carefully manages the entire application process, and communicates professionally and patiently."
+        },
+        {
+          "name": "Robert Wong",
+          "initial": "R",
+          "role": "Hong Kong International System Specialist Consultant",
+          "bio": "Hong Kong native, LPDF certified career planner, with 8 years of experience in Hong Kong international system planning. Specializes in A-Level course selection planning and Hong Kong institution academic progression, providing one-on-one follow-up throughout the process to offer reliable academic guidance for international system students."
         }
       ]
     },
@@ -209,7 +221,7 @@
       "offline": "Offline Services"
     },
     "online": {
-      "intro": "Huateng Group's online service platform breaks geographical barriers, allowing you to access professional study abroad guidance anytime, anywhere. Our advanced online system delivers efficient and convenient full-process services.",
+      "intro": "Huateng Education's online service platform breaks geographical barriers, allowing you to access professional study abroad guidance anytime, anywhere. Our advanced online system delivers efficient and convenient full-process services.",
       "process": {
         "title": "Service Process",
         "steps": [
@@ -236,7 +248,7 @@
       ]
     },
     "offline": {
-      "intro": "Huateng Group's offline service centers are located in major cities nationwide, providing in-depth face-to-face consultations and full-journey accompaniment for the most personalized study abroad experience.",
+      "intro": "Huateng Education's offline service centers are located in major cities nationwide, providing in-depth face-to-face consultations and full-journey accompaniment for the most personalized study abroad experience.",
       "process": {
         "title": "Service Process",
         "steps": [
@@ -279,7 +291,7 @@
         {
           "title": "Hong Kong Bachelor's Admission",
           "target": "For: Mainland High School Students",
-          "desc": "Huateng Group's core expertise area, focusing on undergraduate applications to Hong Kong's top eight universities, providing the latest admission policy insights, interview coaching, and exclusive application channels with industry-leading acceptance rates."
+          "desc": "Huateng Education's core expertise area, focusing on undergraduate applications to Hong Kong's top eight universities, providing the latest admission policy insights, interview coaching, and exclusive application channels with industry-leading acceptance rates."
         }
       ]
     }
@@ -291,7 +303,7 @@
     },
     "intro": {
       "title": "Win-Win Cooperation",
-      "description": "Huateng Group sincerely invites universities, educational institutions, and corporate partners to join our cooperation network. Whether you are looking to expand study abroad service channels or seeking quality educational resource connections, we look forward to working together to build bridges to prestigious universities for students."
+      "description": "Huateng Education sincerely invites universities, educational institutions, and corporate partners to join our cooperation network. Whether you are looking to expand study abroad service channels or seeking quality educational resource connections, we look forward to working together to build bridges to prestigious universities for students."
     },
     "form": {
       "title": "Submit Partnership Inquiry",
@@ -347,21 +359,21 @@
       "title": "Culture Video",
       "subtitle": "Step into Huateng and experience our culture and vitality",
       "playLabel": "Click to play video",
-      "description": "Huateng Group corporate culture video — documenting our growth stories, team spirit, and service philosophy, showcasing the professionalism and humanistic care of the Huateng team.",
+      "description": "Huateng Education corporate culture video — documenting our growth stories, team spirit, and service philosophy, showcasing the professionalism and humanistic care of the Huateng team.",
       "unsupported": "Your browser does not support video playback"
     },
     "gallery": {
       "title": "Culture Gallery",
       "subtitle": "Capturing every highlight moment of the Huateng team",
       "items": [
-        { "caption": "Huateng Group Officially Authorized by Hong Kong Technological and Higher Education Institute (THEi)" },
+        { "caption": "Huateng Education Officially Authorized by Hong Kong Technological and Higher Education Institute (THEi)" },
         { "caption": "Huateng Students Secured Undergraduate Admissions to World's Top Universities" },
         { "caption": "Huateng Offer Harvest: Full Sweep of Hong Kong Universities" },
-        { "caption": "Huateng Group Held THEi Information Session at Beijing Normal University Fuqing Affiliated School" },
-        { "caption": "Huateng Group Conducted THEi Project Presentation at Putian Lizhi Middle School" },
-        { "caption": "Huateng Group Visited Putian No. 24 Middle School for THEi Project Presentation" },
-        { "caption": "Huateng Group Visited Putian No. 9 Middle School for THEi Project Presentation" },
-        { "caption": "Huateng Group Promoted Hong Kong THEi Project at Pingtan Century School" }
+        { "caption": "Huateng Education Held THEi Information Session at Beijing Normal University Fuqing Affiliated School" },
+        { "caption": "Huateng Education Conducted THEi Project Presentation at Putian Lizhi Middle School" },
+        { "caption": "Huateng Education Visited Putian No. 24 Middle School for THEi Project Presentation" },
+        { "caption": "Huateng Education Visited Putian No. 9 Middle School for THEi Project Presentation" },
+        { "caption": "Huateng Education Promoted Hong Kong THEi Project at Pingtan Century School" }
       ]
     }
   },
@@ -372,10 +384,10 @@
     "loading": "Generating reply...",
     "error": "Failed to generate reply. Please try again.",
     "retry": "Retry",
-    "welcome": "Hello! I'm Huateng Group's AI assistant. Feel free to ask me about study abroad programs and university admissions."
+    "welcome": "Hello! I'm Huateng Education's AI assistant. Feel free to ask me about study abroad programs and university admissions."
   },
   "footer": {
-    "name": "Huateng Group",
+    "name": "Huateng Education",
     "description": "A premium and professional study abroad education group, specializing in undergraduate and postgraduate applications, with deep expertise in Hong Kong bachelor's degree admissions.",
     "contact": "Contact Us",
     "address": "Nanshan District, Shenzhen",
@@ -383,6 +395,6 @@
     "phoneHongKong": "Hong Kong: +852 62162030",
     "email": "contact@huatechhk.com",
     "links": "Quick Links",
-    "copyright": "© 2026 Huateng Group. All rights reserved."
+    "copyright": "© 2026 Huateng Education. All rights reserved."
   }
 }
