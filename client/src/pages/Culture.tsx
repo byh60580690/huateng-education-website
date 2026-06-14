@@ -51,24 +51,30 @@ const honorCategories: HonorCategoryConfig[] = [
       '/images/honor/honor_hkbu_3.jpg',
       '/images/honor/honor_hkbu_4.jpg',
       '/images/honor/honor_hkbu_5.jpg',
+      // Lingnan: 2张
+      '/images/honor/honor_lingnan_1.jpg',
+      '/images/honor/honor_lingnan_2.jpg',
     ],
   },
   {
     key: 'hkQuality',
     images: [
-      // THEi: 3张
+      // THEi: 5张
       '/images/honor/honor_thei_1.jpg',
       '/images/honor/honor_thei_2.jpg',
       '/images/honor/honor_thei_3.jpg',
+      '/images/honor/honor_thei_4.jpg',
+      '/images/honor/honor_thei_5.jpg',
       // MU: 3张
       '/images/honor/honor_mu_1.jpg',
       '/images/honor/honor_mu_2.jpg',
       '/images/honor/honor_mu_3.jpg',
-      // HS: 4张
+      // HS: 5张
       '/images/honor/honor_hs_1.jpg',
       '/images/honor/honor_hs_2.jpg',
       '/images/honor/honor_hs_3.jpg',
       '/images/honor/honor_hs_4.jpg',
+      '/images/honor/honor_hs_5.jpg',
       // TWC: 1张
       '/images/honor/honor_twc_1.jpg',
       // HKCHC: 1张

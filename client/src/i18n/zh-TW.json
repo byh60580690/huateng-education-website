@@ -214,85 +214,217 @@
       "title": "集團業務",
       "subtitle": "線上線下融合服務，助力每一位學子圓夢名校"
     },
-    "serviceMode": {
-      "title": "服務模式",
-      "subtitle": "線上線下雙軌並行，為您提供全方位留學申請服務",
-      "online": "線上服務",
-      "offline": "線下服務"
+    "categories": [
+      { "key": "k12", "label": "香港中小學申請(K1-S6)", "tagline": "公立 | 私立 | 國際 | 寄宿學校 全類型覆蓋" },
+      { "key": "tutoring", "label": "國際課程輔導", "tagline": "A-Level/DSE/IGCSE 專業培訓" },
+      { "key": "associate", "label": "副學士/高級文憑申請", "tagline": "升學新路徑 直通大學" },
+      { "key": "bachelor", "label": "香港學士申請", "tagline": "港八大及海外名校申請" },
+      { "key": "master", "label": "香港碩士申請", "tagline": "授課式/研究式 全面規劃" },
+      { "key": "phd", "label": "博士申請", "tagline": "研究型&授課型 導師匹配" }
+    ],
+    "k12": {
+      "applicationTypes": [
+        "公立小一至中六插班申請：教育局統一派位+扣門位申請",
+        "知名私立學校申請：面試輔導+文書準備+入學評估",
+        "國際學校(IB/A-Level/AP)：雙語/全英教學環境",
+        "香港寄宿學校：全英沉浸環境，直通港八大及海外名校",
+        "境外監護服務：未成年學生在港學習生活全程照護"
+      ],
+      "partnerSchools": [
+        { "name": "香港復臨學校", "features": "K12寄宿制 | 無債券費用 | 美國AP課程認證", "image": "/images/business/school_1.jpg" },
+        { "name": "漢鼎書院", "features": "IB+劍橋雙課程體系 | 老牌國際體系 | K1至中六級", "image": "/images/business/school_2.jpg" },
+        { "name": "倫敦卓越書院", "features": "A-Level國際高中體系 | 直通港八大 | 英國課程體系", "image": "/images/business/school_3.jpg" }
+      ],
+      "tutoringCourses": [
+        { "title": "A-Level課程", "content": "數學、進階數學、物理、化學、經濟、會計、商務" },
+        { "title": "DSE香港中學文憑", "content": "中文、英文、數學、公民與社會發展、理科及商科輔導、衝刺提分" },
+        { "title": "IGCSE基礎課程", "content": "國際高中銜接課程，順利度過A-Level/IB體系" },
+        { "title": "英國外教一對一", "content": "口語強化、雅思/托福備考、面試模擬輔導" }
+      ],
+      "serviceProcess": ["入學評估", "選校策劃", "面試輔導", "文書撰寫", "筆試準備", "簽證辦理", "住宿安排", "學業跟進"]
     },
-    "online": {
-      "intro": "華騰教育線上服務平台打破地域限制，讓您隨時隨地享受專業的留學申請指導。通過先進的在線系統，實現高效便捷的全流程服務。",
-      "process": {
-        "title": "服務流程",
-        "steps": [
-          { "label": "在線諮詢" },
-          { "label": "遠程評估" },
-          { "label": "方案制定" },
-          { "label": "申請指導" },
-          { "label": "進度跟蹤" }
+    "tutoring": {
+      "alevel": {
+        "subjects": "數學Mathematics，進階數學Further Mathematics，物理Physics，化學Chemistry，生物Biology，經濟Economics，會計Accounting，商務Business Studies，心理Psychology，地理Geography，法律Law",
+        "teachingModes": [
+          { "label": "一對一私人訂製", "desc": "個性化學習方案" },
+          { "label": "小班制精品教學(2-4人)", "desc": "互動性強" }
+        ],
+        "features": ["根據學生水平制定個性化學習計劃", "針對薄弱環節重點突破"],
+        "examPrep": ["歷年真題精講", "考試技巧訓練", "模擬考試評估"]
+      },
+      "dse": {
+        "coreSubjects": [
+          { "name": "中國語文", "desc": "閱讀理解，寫作訓練，口語考核，校本評估" },
+          { "name": "英國語文", "desc": "閱讀，寫作，聽力，口語及綜合運用" },
+          { "name": "數學", "desc": "必修+延伸部分(M1微積分與統計/M2代數與微積分)" },
+          { "name": "公民與社會發展", "desc": "社會議題分析，數據分析" }
+        ],
+        "electiveSubjects": "物理，化學，生物，經濟，中國歷史，地理等",
+        "guarantee": ["入學評估", "制定方案", "每週跟進", "月度檢測", "考前衝刺"]
+      },
+      "igcse": {
+        "positioning": "國際初中/高中銜接課程，為A-Level或IB學習打基礎",
+        "subjects": "英語，數學，物理，化學，生物，經濟，商務",
+        "advantages": ["幫助內地學生平穩過渡到國際課程體系", "提前適應英語教學環境"],
+        "targetAudience": "計劃就讀國際學校及海外高中的初中生"
+      },
+      "english": {
+        "services": [
+          { "name": "英語口語強化", "desc": "母語外教一對一，糾正發音，提升流利度" },
+          { "name": "雅思IELTS備考", "desc": "聽說讀寫四項專項訓練，目標6.5-7.5分" },
+          { "name": "托福TOEFL備考", "desc": "閱讀，聽力，口語，寫作模擬訓練" },
+          { "name": "入學面試輔導", "desc": "模擬真實面試場景，提升自信應變能力" },
+          { "name": "學術英語寫作", "desc": "論文寫作指導，學術詞彙積累，批判性思維訓練" }
         ]
       },
-      "servicesTitle": "服務內容",
-      "services": [
-        { "title": "在線諮詢", "desc": "資深顧問一對一在線溝通，解答留學疑問" },
-        { "title": "遠程評估", "desc": "全面評估學術背景，精準定位目標院校" },
-        { "title": "線上申請指導", "desc": "文書修改、材料準備全程線上指導" },
-        { "title": "進度跟蹤", "desc": "實時查看申請進度，掌握每一步動態" }
-      ],
-      "advantagesTitle": "線上服務優勢",
-      "advantagesSubtitle": "科技賦能，讓留學申請更高效",
-      "advantages": [
-        { "title": "隨時隨地", "desc": "不受地域和時間限制，隨時獲取專業服務" },
-        { "title": "高效便捷", "desc": "在線系統自動化流程，大幅提升申請效率" },
-        { "title": "數據安全", "desc": "嚴格的數據加密和隱私保護，確保信息安全" }
+      "highlights": [
+        { "title": "名師團隊", "desc": "香港/英國/美國名校畢業教師" },
+        { "title": "靈活排課", "desc": "線上課程，時間靈活安排" },
+        { "title": "成果保證", "desc": "90%+學生成績提升一個等級以上" }
       ]
     },
-    "offline": {
-      "intro": "華騰教育線下服務中心遍佈全國核心城市，提供面對面的深度諮詢和全程陪伴式服務，讓您感受最貼心的留學申請體驗。",
-      "process": {
-        "title": "服務流程",
-        "steps": [
-          { "label": "預約面談" },
-          { "label": "深度評估" },
-          { "label": "文書輔導" },
-          { "label": "面試培訓" },
-          { "label": "錄取跟進" }
-        ]
+    "associate": {
+      "intro": [
+        "副學士(Associate Degree)和高級文憑(Higher Diploma)是香港政府認可的專上教育資格",
+        "學制2年，完成後再銜接本科大三",
+        "2+2=4年獲得香港本科",
+        "與本科直申畢業生獲得的學士學位完全相同，學位證書無任何區別",
+        "畢業證書由銜接的本科院校頒發，含金量一致"
+      ],
+      "universities": {
+        "hk8": ["港大HKU", "中大CUHK", "科大HKUST", "城大CityU", "理大PolyU", "浸會HKBU", "教大EdUHK", "嶺大Lingnan"],
+        "others": ["都會大學", "恆生大學", "東華學院", "高等教育科技學院THEi", "珠海學院", "樹仁大學"]
       },
-      "servicesTitle": "服務內容",
-      "services": [
-        { "title": "一對一面談", "desc": "資深顧問面對面深度溝通，量身定制方案" },
-        { "title": "文書輔導", "desc": "專業文書團隊現場指導，打造亮眼申請材料" },
-        { "title": "面試培訓", "desc": "模擬面試實戰演練，提升面試表現力" },
-        { "title": "校園參觀安排", "desc": "協助安排目標院校實地參觀，親身感受校園氛圍" }
+      "targetGroups": [
+        { "label": "高考失利學生", "desc": "本科線以下也有機會入讀優質院校" },
+        { "label": "中專/職專畢業生", "desc": "無需高考成績，憑在校成績申請" },
+        { "label": "想低成本留港者", "desc": "副學位學費僅約港幣5-7萬/年，遠低於本科" },
+        { "label": "內地大專/專科生", "desc": "可申請副學士重新開始，銜接更好的本科" }
       ],
-      "advantagesTitle": "線下服務優勢",
-      "advantagesSubtitle": "面對面溝通，讓服務更有溫度",
-      "advantages": [
-        { "title": "深度溝通", "desc": "面對面交流更深入，精準把握學生需求和特點" },
-        { "title": "全程陪伴", "desc": "從規劃到錄取全程陪伴，給予最貼心的支持" },
-        { "title": "資源對接", "desc": "線下活動、院校招生會等獨家資源直接對接" }
+      "colleges": [
+        "香港大學附屬學院(HKU SPACE)",
+        "香港中文大學專業進修學院(CUSCS)",
+        "香港理工大學高等教育學院(HKCC)",
+        "香港浸會大學國際學院(HKBU CIE)"
+      ],
+      "services": [
+        { "title": "免費評估", "desc": "入學資格，匹配合適的院校與專業" },
+        { "title": "申請文書撰寫", "desc": "個人陳述PS，推薦信，學習計劃" },
+        { "title": "面試輔導", "desc": "一對一模擬面試，提升錄取率" },
+        { "title": "簽證辦理", "desc": "學生簽證申請全流程代辦" },
+        { "title": "銜接規劃", "desc": "副學位期間規劃本科銜接方向與準備" },
+        { "title": "住宿安排", "desc": "協助安排學生宿舍或租房" }
       ]
     },
-    "directions": {
-      "title": "留學方向",
-      "subtitle": "三大核心方向，覆蓋不同階段的升學需求",
-      "items": [
+    "bachelor": {
+      "hk8Universities": [
+        { "name": "香港大學", "abbr": "HKU", "desc": "亞洲頂尖，QS世界排名前15", "image": "/images/business/uni_hku.jpg" },
+        { "name": "香港中文大學", "abbr": "CUHK", "desc": "綜合研究型，QS世界排名前35", "image": "/images/business/uni_cuhk.jpg" },
+        { "name": "香港科技大學", "abbr": "HKUST", "desc": "理工強校，QS亞洲排名前10", "image": "/images/business/uni_hkust.jpg" },
+        { "name": "香港城市大學", "abbr": "CityU", "desc": "商科與工程卓越", "image": "/images/business/uni_cityu.jpg" },
+        { "name": "香港理工大學", "abbr": "PolyU", "desc": "應用研究領先", "image": "/images/business/uni_polyu.jpg" },
+        { "name": "香港浸會大學", "abbr": "HKBU", "desc": "傳媒/中醫藥聞名", "image": "/images/business/uni_hkbu.jpg" },
+        { "name": "香港教育大學", "abbr": "EdUHK", "desc": "師範教育一流", "image": "/images/business/uni_eduhk.jpg" },
+        { "name": "嶺南大學", "abbr": "Lingnan", "desc": "博雅教育典範", "image": "/images/business/uni_lingnan.jpg" }
+      ],
+      "otherUniversities": [
+        { "name": "香港高等教育科技學院(THEi)", "desc": "華騰教育官方授權指定招生機構，專業實用，就業率高", "highlight": true },
+        { "name": "香港都會大學", "desc": "靈活學制，兼讀可選", "highlight": false },
+        { "name": "香港恆生大學", "desc": "商科特色，粵港澳大灣區認可度高", "highlight": false },
+        { "name": "香港樹仁大學", "desc": "老牌私立大學，人文社科優勢", "highlight": false },
+        { "name": "東華學院", "desc": "護理和健康科學見長", "highlight": false },
+        { "name": "珠海學院", "desc": "建築和新聞傳播專業突出", "highlight": false }
+      ],
+      "applicationChannels": [
         {
-          "title": "本科申請",
-          "target": "適合人群：高中生",
-          "desc": "為高中生提供全球頂尖本科院校的申請規劃與指導，涵蓋選校策略、文書撰寫、標化考試規劃等全流程服務，助力學子邁入理想大學。"
+          "title": "高考直申通道",
+          "items": ["高考成績達一本線/二本線以上即可申請", "部分院校接受英語單科成績替代雅思", "高三在讀可提前申請"]
         },
         {
-          "title": "研究生申請",
-          "target": "適合人群：本科生",
-          "desc": "為本科生提供碩士及博士項目的申請服務，包括學術背景提升、研究計劃撰寫、導師匹配等專業指導，助力學術深造。"
+          "title": "國際課程通道",
+          "items": ["A-Level成績，IB成績，AP+SAT成績均可直接申請", "無需參加高考", "國際生通道優先審理"]
         },
         {
-          "title": "香港學士升學",
-          "target": "適合人群：內地高中生",
-          "desc": "華騰教育核心優勢領域，專注香港八大名校本科申請，提供最新招生政策解讀、面試輔導和獨家申請通道，錄取率行業領先。"
+          "title": "副學士-本科(2+2)",
+          "items": ["副學位畢業後通過Non-JUPAS申請銜接本科大三", "學位證書與四年制本科完全一致"]
         }
+      ],
+      "serviceAdvantages": [
+        { "title": "THEi官方授權指定招生機構", "desc": "獨家名額，優先錄取通道" },
+        { "title": "專業選校規劃", "desc": "根據學生成績和興趣匹配最合適的院校和專業" },
+        { "title": "文書精雕細琢", "desc": "個人陳述，推薦信，課外活動描述全方位準備" },
+        { "title": "面試實戰訓練", "desc": "一對一模擬面試，中英文雙語輔導" },
+        { "title": "申請全程跟進", "desc": "從準備到錄取，每個環節專人負責" }
+      ]
+    },
+    "master": {
+      "popularFields": [
+        { "category": "商科類", "programs": "工商管理MBA，金融學，會計學，市場營銷，國際商務，人力資源管理" },
+        { "category": "教育類", "programs": "教育學，教育心理學，教育管理" },
+        { "category": "傳媒類", "programs": "新聞學，傳播學，新媒體，廣告學，影視製作" },
+        { "category": "理工IT類", "programs": "計算機科學，數據科學，人工智能AI，信息技術IT，工程管理" },
+        { "category": "社科類", "programs": "社會工作，心理學，公共政策，社會學" }
+      ],
+      "universities": {
+        "hk8": ["港大", "中大", "科大", "城大", "理工", "浸會", "教大", "嶺大"],
+        "others": ["都會大學", "恆生大學", "HKU SPACE", "高科院", "宏恩學院"]
+      },
+      "requirements": [
+        { "item": "學歷要求", "desc": "本科學士學位(統招/自考/成人高考均可)" },
+        { "item": "成績要求", "desc": "GPA 2.5-3.0以上(部分院校接受2.3以上)" },
+        { "item": "語言要求", "desc": "雅思IELTS 6.0-6.5(部分專業接受CET-6 430+)" },
+        { "item": "工作經驗", "desc": "商科MBA通常要求2-3年工作經驗，其他專業應屆可申" },
+        { "item": "申請材料", "desc": "個人陳述PS，中英文成績單，學位證，推薦信2封，簡歷CV" }
+      ],
+      "stayPath": [
+        { "stage": "碩士畢業", "desc": "獲IANG留港2年" },
+        { "stage": "IANG簽證期間", "desc": "在港工作" },
+        { "stage": "累計滿7年", "desc": "申請香港永久居民" },
+        { "stage": "7年後", "desc": "全家享受香港福利" }
+      ],
+      "services": [
+        { "title": "免費專業評估", "desc": "根據背景精準匹配院校和專業方案" },
+        { "title": "申請材料全套製作", "desc": "PS、CV、推薦信、Research Proposal" },
+        { "title": "語言考試規劃", "desc": "模擬面試訓練，常見問題準備" },
+        { "title": "簽證與住宿", "desc": "IANG簽證申請，租房/宿舍推薦" },
+        { "title": "留港就業指導", "desc": "簡歷優化，求職面試輔導，人脈資源對接" },
+        { "title": "面試指導", "desc": "雅思/托福備考建議與時間安排" }
+      ]
+    },
+    "phd": {
+      "research": {
+        "fields": "人文社科，理工科，醫學，法學，商學等全領域覆蓋",
+        "scholarship": "香港政府獎學金HKPFS(每月約2.8萬港幣+學費減免)",
+        "duration": "全日制3-4年，兼讀制4-6年(部分院校接受兼讀)",
+        "requirements": "碩士學位+研究計劃PR+學術套磁+面試",
+        "prospects": "高校教職，科研機構，企業研發高管"
+      },
+      "dba": {
+        "audience": "企業家，企業高管，創業者，行業資深從業者",
+        "advantages": "免傳統學術論文，以商業實踐研究替代",
+        "features": "實戰商業案例，企業戰略研討，管理實踐項目",
+        "mode": "兼讀制，每月集中授課1-2次",
+        "duration": "3年",
+        "universities": "香港都會大學，香港理工大學等"
+      },
+      "dbs": {
+        "audience": "中高層管理者，業務骨幹，商科專業人士",
+        "advantages": "學制靈活，課程偏實用管理，以實踐項目替代學術論文",
+        "features": "商業戰略，組織管理，財務風控，數字化轉型實戰研討",
+        "mode": "全日制為主，每週集中上課3-5天",
+        "duration": "3年",
+        "universities": "香港嶺南大學"
+      },
+      "services": [
+        { "step": "學術評估", "desc": "評估學歷背景，研究經歷，語言水平，判斷申請可行性" },
+        { "step": "院校篩選", "desc": "根據研究方向匹配導師，分析錄取概率" },
+        { "step": "學術套磁", "desc": "撰寫套磁信，聯繫目標導師，獲取接收意向" },
+        { "step": "研究計劃PR撰寫", "desc": "指導撰寫高質量Research Proposal，學術規範與前沿性並重" },
+        { "step": "模擬學術面試", "desc": "訓練英文答辯能力與研究表達" },
+        { "step": "申請材料準備", "desc": "CV推薦信，成績單，語言成績全套整理" },
+        { "step": "申請遞交與跟進", "desc": "遞交申請後持續跟進狀態，與招生委員會溝通" },
+        { "step": "錄取後服務", "desc": "簽證辦理，租房安排，入學註冊全流程協助" }
       ]
     }
   },

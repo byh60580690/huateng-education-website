@@ -214,85 +214,217 @@
       "title": "Our Business",
       "subtitle": "Integrated online and offline services to help every student achieve their dream of attending a prestigious university"
     },
-    "serviceMode": {
-      "title": "Service Models",
-      "subtitle": "Dual-track online and offline services for comprehensive study abroad application support",
-      "online": "Online Services",
-      "offline": "Offline Services"
+    "categories": [
+      { "key": "k12", "label": "Hong Kong K1-S12 Application", "tagline": "Public | Private | International | Boarding Schools" },
+      { "key": "tutoring", "label": "International Curriculum Tutoring", "tagline": "A-Level/DSE/IGCSE Professional Training" },
+      { "key": "associate", "label": "Associate Degree/Higher Diploma", "tagline": "New Pathway to University" },
+      { "key": "bachelor", "label": "Hong Kong Bachelor's Application", "tagline": "Top 8 HK & Overseas Universities" },
+      { "key": "master", "label": "Hong Kong Master's Application", "tagline": "Taught/Research Programs" },
+      { "key": "phd", "label": "PhD Application", "tagline": "Research & Taught Programs" }
+    ],
+    "k12": {
+      "applicationTypes": [
+        "Public School P1-S6 Transfer Application: EDB Central Allocation + Discretionary Places",
+        "Private School Application: Interview Coaching + Document Preparation + Entrance Assessment",
+        "International Schools (IB/A-Level/AP): Bilingual/English Teaching Environment",
+        "Hong Kong Boarding Schools: English Immersion Environment, Direct Path to Top 8 HK & Overseas Universities",
+        "Guardianship Service: Full Support for Underage Students Studying in Hong Kong"
+      ],
+      "partnerSchools": [
+        { "name": "Hong Kong Adventist Academy", "features": "K12 Boarding | No Debenture | AP Accredited", "image": "/images/business/school_1.jpg" },
+        { "name": "Han Academy", "features": "IB + Cambridge Dual Curriculum | Established International System | K1-S6", "image": "/images/business/school_2.jpg" },
+        { "name": "London Excellence Academy", "features": "A-Level International High School | Direct Entry to Top 8 HK | UK Curriculum", "image": "/images/business/school_3.jpg" }
+      ],
+      "tutoringCourses": [
+        { "title": "A-Level Course", "content": "Math, Further Math, Physics, Chemistry, Economics, Accounting, Business" },
+        { "title": "DSE Hong Kong Diploma", "content": "Chinese, English, Math, Citizenship & Social Development, Science & Commerce, Exam Prep" },
+        { "title": "IGCSE Foundation", "content": "International High School Bridge Course, Smooth Transition to A-Level/IB" },
+        { "title": "UK Native Tutor 1-on-1", "content": "Speaking Enhancement, IELTS/TOEFL Prep, Interview Coaching" }
+      ],
+      "serviceProcess": ["Assessment", "School Selection", "Interview Coaching", "Essay Writing", "Exam Prep", "Visa Processing", "Accommodation", "Academic Follow-up"]
     },
-    "online": {
-      "intro": "Huateng Education's online service platform breaks geographical barriers, allowing you to access professional study abroad guidance anytime, anywhere. Our advanced online system delivers efficient and convenient full-process services.",
-      "process": {
-        "title": "Service Process",
-        "steps": [
-          { "label": "Online Consultation" },
-          { "label": "Remote Assessment" },
-          { "label": "Plan Development" },
-          { "label": "Application Guidance" },
-          { "label": "Progress Tracking" }
+    "tutoring": {
+      "alevel": {
+        "subjects": "Mathematics, Further Mathematics, Physics, Chemistry, Biology, Economics, Accounting, Business Studies, Psychology, Geography, Law",
+        "teachingModes": [
+          { "label": "1-on-1 Private Tutoring", "desc": "Personalized Study Plan" },
+          { "label": "Small Group (2-4 Students)", "desc": "Interactive Learning" }
+        ],
+        "features": ["Personalized study plans based on student level", "Focused improvement on weak areas"],
+        "examPrep": ["Past paper analysis", "Exam technique training", "Mock exam assessment"]
+      },
+      "dse": {
+        "coreSubjects": [
+          { "name": "Chinese Language", "desc": "Reading comprehension, Writing, Speaking, School-based assessment" },
+          { "name": "English Language", "desc": "Reading, Writing, Listening, Speaking & Integrated Skills" },
+          { "name": "Mathematics", "desc": "Compulsory + Extended Modules (M1 Calculus & Statistics/M2 Algebra & Calculus)" },
+          { "name": "Citizenship & Social Development", "desc": "Social issue analysis, Data analysis" }
+        ],
+        "electiveSubjects": "Physics, Chemistry, Biology, Economics, Chinese History, Geography, etc.",
+        "guarantee": ["Entry Assessment", "Study Plan", "Weekly Progress", "Monthly Tests", "Exam Sprint"]
+      },
+      "igcse": {
+        "positioning": "International junior/senior high school bridge course, preparing for A-Level or IB studies",
+        "subjects": "English, Mathematics, Physics, Chemistry, Biology, Economics, Business",
+        "advantages": ["Smooth transition to international curriculum for mainland students", "Early adaptation to English teaching environment"],
+        "targetAudience": "Junior high students planning to attend international schools or overseas high schools"
+      },
+      "english": {
+        "services": [
+          { "name": "English Speaking Enhancement", "desc": "Native speaker 1-on-1, Pronunciation correction, Fluency improvement" },
+          { "name": "IELTS Preparation", "desc": "Four-skill training, Target 6.5-7.5" },
+          { "name": "TOEFL Preparation", "desc": "Reading, Listening, Speaking, Writing practice" },
+          { "name": "Entrance Interview Coaching", "desc": "Real interview simulation, Confidence building" },
+          { "name": "Academic English Writing", "desc": "Essay writing guidance, Academic vocabulary, Critical thinking" }
         ]
       },
-      "servicesTitle": "Service Details",
-      "services": [
-        { "title": "Online Consultation", "desc": "One-on-one online communication with senior consultants to answer all your questions" },
-        { "title": "Remote Assessment", "desc": "Comprehensive academic background evaluation for precise university targeting" },
-        { "title": "Online Application Guidance", "desc": "Full online guidance for essay editing and document preparation" },
-        { "title": "Progress Tracking", "desc": "Real-time application progress monitoring at every step" }
-      ],
-      "advantagesTitle": "Online Service Advantages",
-      "advantagesSubtitle": "Technology-empowered for more efficient applications",
-      "advantages": [
-        { "title": "Anytime, Anywhere", "desc": "Access professional services without geographical or time constraints" },
-        { "title": "Efficient & Convenient", "desc": "Automated online processes significantly improve application efficiency" },
-        { "title": "Data Security", "desc": "Strict data encryption and privacy protection to ensure information security" }
+      "highlights": [
+        { "title": "Expert Teachers", "desc": "Graduates from HK/UK/US Top Universities" },
+        { "title": "Flexible Scheduling", "desc": "Online courses, Flexible timing" },
+        { "title": "Results Guaranteed", "desc": "90%+ students improve by one grade or more" }
       ]
     },
-    "offline": {
-      "intro": "Huateng Education's offline service centers are located in major cities nationwide, providing in-depth face-to-face consultations and full-journey accompaniment for the most personalized study abroad experience.",
-      "process": {
-        "title": "Service Process",
-        "steps": [
-          { "label": "Schedule Meeting" },
-          { "label": "In-depth Assessment" },
-          { "label": "Essay Coaching" },
-          { "label": "Interview Training" },
-          { "label": "Admission Follow-up" }
-        ]
+    "associate": {
+      "intro": [
+        "Associate Degree and Higher Diploma are Hong Kong government-recognized tertiary qualifications",
+        "2-year program, then transfer to Year 3 of bachelor's degree",
+        "2+2=4 years to obtain Hong Kong bachelor's degree",
+        "Same bachelor's degree as direct entry students, identical degree certificate",
+        "Degree issued by the transferring university, same recognition"
+      ],
+      "universities": {
+        "hk8": ["HKU", "CUHK", "HKUST", "CityU", "PolyU", "HKBU", "EdUHK", "Lingnan"],
+        "others": ["Metropolitan University", "Hang Seng University", "Tung Wah College", "THEi", "Chu Hai College", "Shue Yan University"]
       },
-      "servicesTitle": "Service Details",
-      "services": [
-        { "title": "One-on-One Meeting", "desc": "In-depth face-to-face consultation with senior advisors for tailored plans" },
-        { "title": "Essay Coaching", "desc": "Professional writing team provides on-site guidance for outstanding application materials" },
-        { "title": "Interview Training", "desc": "Mock interview practice sessions to enhance interview performance" },
-        { "title": "Campus Visit Arrangement", "desc": "Assistance in arranging campus visits to experience the university atmosphere firsthand" }
+      "targetGroups": [
+        { "label": "Gaokao Underperformers", "desc": "Opportunity for quality universities even below cutoff" },
+        { "label": "Vocational Graduates", "desc": "Apply with school transcripts, no Gaokao needed" },
+        { "label": "Budget-conscious Students", "desc": "Associate degree tuition only HKD 50-70K/year, much lower than bachelor's" },
+        { "label": "Mainland College Students", "desc": "Restart with associate degree, transfer to better universities" }
       ],
-      "advantagesTitle": "Offline Service Advantages",
-      "advantagesSubtitle": "Face-to-face communication for a warmer service experience",
-      "advantages": [
-        { "title": "Deep Communication", "desc": "Face-to-face interaction for deeper understanding of student needs and characteristics" },
-        { "title": "Full Accompaniment", "desc": "Complete support from planning to admission, providing the most caring assistance" },
-        { "title": "Resource Connection", "desc": "Direct access to exclusive resources including offline events and university admission fairs" }
+      "colleges": [
+        "HKU School of Professional and Continuing Education (HKU SPACE)",
+        "CUHK School of Continuing and Professional Studies (CUSCS)",
+        "PolyU Hong Kong Community College (HKCC)",
+        "HKBU College of International Education (HKBU CIE)"
+      ],
+      "services": [
+        { "title": "Free Assessment", "desc": "Eligibility check, matching suitable universities and programs" },
+        { "title": "Application Documents", "desc": "Personal Statement PS, Recommendation Letters, Study Plan" },
+        { "title": "Interview Coaching", "desc": "1-on-1 mock interviews, improving admission rate" },
+        { "title": "Visa Processing", "desc": "Full student visa application service" },
+        { "title": "Transfer Planning", "desc": "Bachelor's transfer planning during associate degree period" },
+        { "title": "Accommodation", "desc": "Assistance with dormitory or rental arrangements" }
       ]
     },
-    "directions": {
-      "title": "Study Directions",
-      "subtitle": "Three core directions covering different stages of academic advancement",
-      "items": [
+    "bachelor": {
+      "hk8Universities": [
+        { "name": "The University of Hong Kong", "abbr": "HKU", "desc": "Top in Asia, QS World Ranking Top 15", "image": "/images/business/uni_hku.jpg" },
+        { "name": "The Chinese University of Hong Kong", "abbr": "CUHK", "desc": "Comprehensive Research University, QS Top 35", "image": "/images/business/uni_cuhk.jpg" },
+        { "name": "The Hong Kong University of Science and Technology", "abbr": "HKUST", "desc": "Strong in Science & Engineering, QS Asia Top 10", "image": "/images/business/uni_hkust.jpg" },
+        { "name": "City University of Hong Kong", "abbr": "CityU", "desc": "Excellence in Business & Engineering", "image": "/images/business/uni_cityu.jpg" },
+        { "name": "The Hong Kong Polytechnic University", "abbr": "PolyU", "desc": "Leading in Applied Research", "image": "/images/business/uni_polyu.jpg" },
+        { "name": "Hong Kong Baptist University", "abbr": "HKBU", "desc": "Renowned in Communication & Chinese Medicine", "image": "/images/business/uni_hkbu.jpg" },
+        { "name": "The Education University of Hong Kong", "abbr": "EdUHK", "desc": "Top-tier Teacher Education", "image": "/images/business/uni_eduhk.jpg" },
+        { "name": "Lingnan University", "abbr": "Lingnan", "desc": "Liberal Arts Excellence", "image": "/images/business/uni_lingnan.jpg" }
+      ],
+      "otherUniversities": [
+        { "name": "THEi (Technological and Higher Education Institute)", "desc": "Huateng Education Official Authorized Recruitment Partner, Practical Programs, High Employment Rate", "highlight": true },
+        { "name": "Hong Kong Metropolitan University", "desc": "Flexible study modes, Part-time options", "highlight": false },
+        { "name": "The Hang Seng University of Hong Kong", "desc": "Business-focused, High recognition in GBA", "highlight": false },
+        { "name": "Hong Kong Shue Yan University", "desc": "Established private university, Strong in humanities", "highlight": false },
+        { "name": "Tung Wah College", "desc": "Nursing and Health Sciences excellence", "highlight": false },
+        { "name": "Chu Hai College of Higher Education", "desc": "Architecture and Journalism standout programs", "highlight": false }
+      ],
+      "applicationChannels": [
         {
-          "title": "Undergraduate Application",
-          "target": "For: High School Students",
-          "desc": "Comprehensive application planning and guidance for top global undergraduate programs, covering school selection strategy, essay writing, standardized test planning, and full-process services to help students enter their ideal universities."
+          "title": "Gaokao Direct Entry",
+          "items": ["Gaokao score above first/second tier cutoff", "Some universities accept English single subject for IELTS waiver", "Early application for Year 12 students"]
         },
         {
-          "title": "Graduate Application",
-          "target": "For: Undergraduate Students",
-          "desc": "Application services for master's and doctoral programs, including academic profile enhancement, research proposal writing, supervisor matching, and professional guidance for academic advancement."
+          "title": "International Curriculum Entry",
+          "items": ["A-Level, IB, AP+SAT scores all accepted", "No Gaokao required", "Priority processing for international students"]
         },
         {
-          "title": "Hong Kong Bachelor's Admission",
-          "target": "For: Mainland High School Students",
-          "desc": "Huateng Education's core expertise area, focusing on undergraduate applications to Hong Kong's top eight universities, providing the latest admission policy insights, interview coaching, and exclusive application channels with industry-leading acceptance rates."
+          "title": "Associate-Bachelor (2+2)",
+          "items": ["Apply via Non-JUPAS after associate degree completion", "Degree certificate identical to 4-year bachelor's"]
         }
+      ],
+      "serviceAdvantages": [
+        { "title": "THEi Official Authorized Partner", "desc": "Exclusive quota, Priority admission channel" },
+        { "title": "Professional School Selection", "desc": "Matching best-fit universities and programs based on student profile" },
+        { "title": "Meticulous Essay Preparation", "desc": "Personal statement, recommendations, extracurricular descriptions fully prepared" },
+        { "title": "Interview Training", "desc": "1-on-1 mock interviews, Bilingual coaching" },
+        { "title": "Full Application Support", "desc": "Dedicated support from preparation to admission" }
+      ]
+    },
+    "master": {
+      "popularFields": [
+        { "category": "Business", "programs": "MBA, Finance, Accounting, Marketing, International Business, HR Management" },
+        { "category": "Education", "programs": "Education, Educational Psychology, Educational Management" },
+        { "category": "Media & Communication", "programs": "Journalism, Communication, New Media, Advertising, Film Production" },
+        { "category": "STEM & IT", "programs": "Computer Science, Data Science, AI, IT, Engineering Management" },
+        { "category": "Social Sciences", "programs": "Social Work, Psychology, Public Policy, Sociology" }
+      ],
+      "universities": {
+        "hk8": ["HKU", "CUHK", "HKUST", "CityU", "PolyU", "HKBU", "EdUHK", "Lingnan"],
+        "others": ["Metropolitan University", "Hang Seng University", "HKU SPACE", "THEi", "Grace College"]
+      },
+      "requirements": [
+        { "item": "Academic Requirement", "desc": "Bachelor's degree (Regular/Self-study/Adult Education all accepted)" },
+        { "item": "GPA Requirement", "desc": "GPA 2.5-3.0 or above (some accept 2.3+)" },
+        { "item": "Language Requirement", "desc": "IELTS 6.0-6.5 (some accept CET-6 430+)" },
+        { "item": "Work Experience", "desc": "MBA typically requires 2-3 years, other programs accept fresh graduates" },
+        { "item": "Application Materials", "desc": "Personal Statement PS, Transcripts (CN/EN), Degree Certificate, 2 Recommendation Letters, CV" }
+      ],
+      "stayPath": [
+        { "stage": "Master's Graduation", "desc": "Obtain IANG visa for 2 years" },
+        { "stage": "During IANG Visa", "desc": "Work in Hong Kong" },
+        { "stage": "7 Years Total", "desc": "Apply for HK Permanent Residence" },
+        { "stage": "After 7 Years", "desc": "Full family enjoys HK benefits" }
+      ],
+      "services": [
+        { "title": "Free Professional Assessment", "desc": "Precise university and program matching based on background" },
+        { "title": "Full Application Materials", "desc": "PS, CV, Recommendation Letters, Research Proposal" },
+        { "title": "Language Exam Planning", "desc": "Mock interview training, Common question preparation" },
+        { "title": "Visa & Accommodation", "desc": "IANG visa application, Rental/dormitory recommendations" },
+        { "title": "Employment Guidance", "desc": "CV optimization, Interview coaching, Network connections" },
+        { "title": "Interview Coaching", "desc": "IELTS/TOEFL preparation advice and timeline" }
+      ]
+    },
+    "phd": {
+      "research": {
+        "fields": "Humanities, Social Sciences, STEM, Medicine, Law, Business - All disciplines covered",
+        "scholarship": "Hong Kong PhD Fellowship Scheme HKPFS (approx. HKD 28K/month + tuition waiver)",
+        "duration": "Full-time 3-4 years, Part-time 4-6 years (some universities accept part-time)",
+        "requirements": "Master's degree + Research Proposal + Academic Contact + Interview",
+        "prospects": "University faculty, Research institutions, Corporate R&D leadership"
+      },
+      "dba": {
+        "audience": "Entrepreneurs, Executives, Founders, Industry veterans",
+        "advantages": "No traditional dissertation, Business practice research instead",
+        "features": "Real business cases, Strategic seminars, Management practice projects",
+        "mode": "Part-time, Monthly intensive sessions 1-2 times",
+        "duration": "3 years",
+        "universities": "Hong Kong Metropolitan University, Hong Kong Polytechnic University, etc."
+      },
+      "dbs": {
+        "audience": "Mid-senior managers, Business professionals, Business graduates",
+        "advantages": "Flexible schedule, Practical management focus, Practice projects instead of thesis",
+        "features": "Business strategy, Organizational management, Financial risk, Digital transformation seminars",
+        "mode": "Primarily full-time, Weekly intensive 3-5 days",
+        "duration": "3 years",
+        "universities": "Lingnan University"
+      },
+      "services": [
+        { "step": "Academic Assessment", "desc": "Evaluate academic background, research experience, language proficiency for application feasibility" },
+        { "step": "University Selection", "desc": "Match supervisors based on research direction, analyze admission probability" },
+        { "step": "Academic Contact", "desc": "Draft contact emails, reach target supervisors, obtain acceptance intent" },
+        { "step": "Research Proposal Writing", "desc": "Guide high-quality RP writing, balancing academic rigor and innovation" },
+        { "step": "Mock Academic Interview", "desc": "Train English defense skills and research presentation" },
+        { "step": "Application Materials", "desc": "Full preparation of CV, recommendations, transcripts, language scores" },
+        { "step": "Application Submission & Follow-up", "desc": "Continuous status tracking, communication with admissions committee" },
+        { "step": "Post-Admission Services", "desc": "Visa processing, accommodation, enrollment registration full support" }
       ]
     }
   },
