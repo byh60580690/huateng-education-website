@@ -213,17 +213,16 @@
     },
     "partners": {
       "title": "Partner Schools",
-      "subtitle": "Deep partnerships with high schools to help cultivate outstanding talent",
+      "subtitle": "Collaborating with primary, secondary schools and higher education institutions to build an integrated education system and cultivate high-quality talent",
       "list": [
         { "name": "THEi (Technological and Higher Education Institute)" },
-        { "name": "Hong Kong Grace College" },
-        { "name": "Hong Kong Nang Yan College" },
+        { "name": "Hong Kong Adventist Academy" },
+        { "name": "Han Academy" },
+        { "name": "London Excellence Academy" },
+        { "name": "Hong Kong Nang Yan College of Higher Education" },
         { "name": "Shenzhen Meizhong School" },
-        { "name": "Beijing Normal University Fuqing Affiliated School" },
-        { "name": "Pingtan New Century School" },
-        { "name": "Putian Lizhi Middle School" },
-        { "name": "Putian No. 9 Middle School" },
-        { "name": "Putian No. 24 Middle School" }
+        { "name": "Beijing Tsinghua Yucai Experimental School" },
+        { "name": "Guangdong Vocational and Technical University of Business and Technology" }
       ]
     }
   },
