@@ -2,7 +2,7 @@
   "nav": {
     "home": "首页",
     "about": "关于我们",
-    "business": "集团业务",
+    "business": "核心业务",
     "culture": "企业文化",
     "cooperation": "合作加盟"
   },
@@ -228,7 +228,7 @@
   },
   "business": {
     "hero": {
-      "title": "集团业务",
+      "title": "核心业务",
       "subtitle": "线上线下融合服务，助力每一位学子圆梦名校"
     },
     "categories": [
