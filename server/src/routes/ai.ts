@@ -128,7 +128,7 @@ async function callQwenAPI(messages: ChatMessage[]): Promise<string> {
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: 'qwen-plus',
+        model: 'qwen-turbo',
         messages,
         temperature: 0.7,
         max_tokens: 1024,

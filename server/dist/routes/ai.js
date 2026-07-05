@@ -99,7 +99,7 @@ async function callQwenAPI(messages) {
                 Authorization: `Bearer ${apiKey}`,
             },
             body: JSON.stringify({
-                model: 'qwen-plus',
+                model: 'qwen-turbo',
                 messages,
                 temperature: 0.7,
                 max_tokens: 1024,
